@@ -5,7 +5,17 @@
     <link>https://acvill.github.io/</link>
     <description>Recent content on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restriction enzyme sites across bacterial genomes - implications for metagenomics</title>
+      <link>https://acvill.github.io/posts/restenz/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/restenz/</guid>
+      <description>Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1 Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3 Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6 and ATAC-seq.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://acvill.github.io/about/</link>
@@ -42,15 +52,6 @@ PDF version
  Education Bachelor of Science, Magna Cum Laude, Gettysburg College Biochemistry and Molecular Biology major, 3.70 GPA
 Lincoln Scholar – highest merit-based scholarship awarded
  Research Experience PhD Candidate – Lab of Dr. Ilana Brito, Cornell University Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease - Spring 2017 – present</description>
-    </item>
-    
-    <item>
-      <title>Restriction enzyme sites across bacterial genomes - implications for metagenomics</title>
-      <link>https://acvill.github.io/posts/restenz/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://acvill.github.io/posts/restenz/</guid>
-      <description>Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1 Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3 Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6 and ATAC-seq.</description>
     </item>
     
   </channel>
