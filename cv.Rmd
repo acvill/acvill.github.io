@@ -1,0 +1,51 @@
+---
+title: "Curriculum Vitae"
+author: "Albert Vill"
+date: ""
+output: html_document
+---
+
+Last updated 19 December 2020  
+[PDF version](/AVill_CV_19Dec2020.pdf)
+
+---
+
+## <span style="color:purple">Education</span>
+
+#### Bachelor of Science, *Magna Cum Laude*, Gettysburg College
+Biochemistry and Molecular Biology major, 3.70 GPA  
+Lincoln Scholar – highest merit-based scholarship awarded
+
+---
+
+## <span style="color:purple">Research Experience</span>
+
+#### PhD Candidate – Lab of Dr. Ilana Brito, Cornell University
+Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease - **Spring 2017 – present**  
+
+#### HHMI Summer Research Fellow – Gettysburg College
+Characterizing soil bacteriophages by host range screens and comparative genomics - **Summers 2014 & 2015**
+
+---
+
+## <span style="color:purple">Publications</span>
+
+Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nat Commun*. **2020** Sep 1;11(1):4379.
+
+Delesalle VA, **Vill AC**, Tomko BE, Boas K, Burton EA, Guffey AA, Loney R, Simões MS, Tanke NT, Krukonis GP. Comparative genomics of fourteen novel Siphoviridae phages of Bacillus subtilis, including three phages closely related to SPP1. **In preparation**.
+
+Delesalle VA, Tanke NT, **Vill AC**, Krukonis GP. [Testing hypotheses for the presence of tRNA genes in mycobacteriophage genomes.](https://doi.org/10.1080/21597081.2016.1219441) *Bacteriophage*. **2016** Aug 5;6(3):e1219441.
+
+Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, Hendrix RW, Lawrence JG, Hatfull GF; **Science Education Alliance Phage Hunters Advancing Genomics and Evolutionary Science** <span style="color:red">‡</span>; Phage Hunters Integrating Research and Education; Mycobacterial Genetics Course. [Whole genome comparison of a large collection of mycobacteriophages reveals a continuum of phage genetic diversity.](https://doi.org/10.7554/elife.06416) *eLife*. **2015** Apr 28;4:e06416.
+
+<span style="color:red">   †</span> co-first author  
+<span style="color:red">   ‡</span> consortium member, data contributor
+
+---
+
+## <span style="color:purple">Honors and Awards</span>
+
+Distinguished Scholar, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) - **2019**  
+Honorable Mention, NSF Graduate Research Fellowship - **2018**  
+Herzog Teaching Fellow, Gettysburg College - **2015**  
+HHMI Summer Research Fellow, Gettysburg College - **2014 & 2015**
