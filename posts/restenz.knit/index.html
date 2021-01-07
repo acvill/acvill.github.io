@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.1" />
+
+    
+    
+    
+
+<title>Restriction enzyme sites across bacterial genomes - implications for metagenomics • Albert Vill</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Restriction enzyme sites across bacterial genomes - implications for metagenomics"/>
+<meta name="twitter:description" content="Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6and ATAC-seq."/>
+
+<meta property="og:title" content="Restriction enzyme sites across bacterial genomes - implications for metagenomics" />
+<meta property="og:description" content="Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6and ATAC-seq." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://acvill.github.io/posts/restenz.knit/" />
+<meta property="article:published_time" content="2020-12-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-22T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.ac4380ee361702b17c210ce9b85a4d2bf0fd3f0333c9b538ea2a2918f6418081.css" integrity="sha256-rEOA7jYXArF8IQzpuFpNK/D9PwMzybU46iopGPZBgIE=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/img/favicon-16x16.png">
+    
+    
+
+    
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://acvill.github.io/">
+        
+          Albert Vill
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://acvill.github.io/img/about/headshot2_square.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Albert Vill</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/about">
+						<span>About</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/cv">
+						<span>CV</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+  
+	<a href="https://biology.stackexchange.com/users/52196/acvill" rel="me"><i class="fab fa-stack-exchange fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://twitter.com/_AlbertVill" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/albert-vill-a457821a1" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://orcid.org/0000-0001-5982-0298" rel="me"><i class="fab fa-orcid fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="mailto:albertcvill@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 - 2021 acvill
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Restriction enzyme sites across bacterial genomes - implications for metagenomics</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> 22 Dec 2020
+    
+    
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/molecular_biology">molecular_biology</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/metagenomics">metagenomics</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 9 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>Restriction enzymes (REs) have been the workhorses of molecular biology for decades.<!-- raw HTML omitted --><strong>1</strong><!-- raw HTML omitted --> Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.<!-- raw HTML omitted --><strong>2,3</strong><!-- raw HTML omitted --> Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin<!-- raw HTML omitted --><strong>4,5</strong><!-- raw HTML omitted -->, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq<!-- raw HTML omitted --><strong>6</strong><!-- raw HTML omitted --> and ATAC-seq.<!-- raw HTML omitted --><strong>7</strong><!-- raw HTML omitted --> Generally, if you want sticky ends to add adapters or labeled nucleotides, REs are the way to go.</p>
+<p>In context of metagenomics, RE-based proximity ligation libraries have been of great utility in improving metagenome-assembled genomes<!-- raw HTML omitted --><strong>8</strong><!-- raw HTML omitted --> and linking plasmids with their bacterial hosts.<!-- raw HTML omitted --><strong>9,10</strong><!-- raw HTML omitted --> When working with a single organism that has a well-annotated genome, sequence bias can be accounted for by choosing an enzyme that is expected to cut at regular intervals across the genome, based on GC content or the known distribution of RE sites. Applying RE methods to a microbiome presents a problem - how do you choose an appropriate enzyme when there are many different genomes, or when the community composition is unknown?</p>
+<p><img src="/img/posts/Hi-C_3.png" alt="Metagenomic proximity ligation sequencing associates plasmids with bacterial chromosomes, without the need to isolate and culture the host. (Made with BioRender)" title="metagenomic Hi-C schematic, made using BioRender"></p>
+<p>To address this question, I looked at the distribution of RE recognition sites across a collection of human-associated bacterial genomes&hellip;</p>
+<h4 id="enzymes">Enzymes</h4>
+<p>Because this question concerns the choice of REs for metagenomics, I only considered REs that are commercially available and useful in context of the methods described.  To that end, I downloaded a <a href="https://www.neb.com/tools-and-resources/selection-charts/alphabetized-list-of-recognition-specificities">list of available enzymes and their recognition sequences</a> from NEB and subset the RE list to exclude (1) enzymes with ambiguous bases at any position in the recognition sequence (the tool I use does not handle complete <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2865858/">IUPAC encoding</a>, only ACGT) and (2) enzymes that cleave outside of the recognition site (<em>i.e.</em> Type IIS enzymes). For simplicity, different REs with the same recognition sequence share the same index, even if they are not isoschizomers, yielding 14 unique 4-bp sequences, 60 unique 6-bp sequences (some representing <a href="https://www.neb.com/products/r0631-nbbbvci">nicking endonucleases</a>), and 9 unique 8-bp sequences.  The cleaned-up RE data are available <a href="/posts/RE_list_revised.csv">here</a>.</p>
+<h4 id="genomes">Genomes</h4>
+<p>The human microbiome is one of the best-studied microbial systems, and the PATRIC database<!-- raw HTML omitted --><strong>11</strong><!-- raw HTML omitted --> maintains a <a href="https://www.patricbrc.org/view/Taxonomy/2#view_tab=genomes">large collection</a> of whole-genome sequencing data for microbes isolated from human hosts. Using a version of this database accessed in 2018, I subset the genomes to exclude those smaller than 1 Mbp and, for simplicity of visualization, included only bacteria from the phyla commonly seen in the human gut microbiome.  In total, 59,579 genomes representing 6 phyla were analyzed.</p>
+<h4 id="analysis">Analysis</h4>
+<p>I used <a href="https://github.com/gmarcais/Jellyfish">Jellyfish</a> to count all k-mers of lengths 4, 6, and 8 across the set of genomes. Jellyfish utilizes memory-efficient search of query sequences using hash tables and, importantly, does not double-count palindromes.<!-- raw HTML omitted --><strong>12</strong><!-- raw HTML omitted --> Counts were parsed to extract sequences corresponding to the curated RE set, and I used a simple normalization to account for both genome length and recognition sequence length (<em>n</em>), with an added &ldquo;0.1&rdquo; to avoid errors when plotting zero-counts on a log axis:</p>
+<p>$$ NormCount = \frac{RawCount + 0.1}{GenomeLength} \times 4^n $$
+Some caveats:</p>
+<p>(1) This analysis does not account for the presence or activity of methyltransferases in bacterial genomes, and some REs are sensitive to DNA methylation. Consider isoschizomers DpnII, Sau3AI, and MboI: all three enzymes recognize the GATC tetramer and cleave it to produce a CTAG-5' overhang. However, both DpnII and MboI are blocked by <em>dam</em> methylation, whereas Sau3AI is agnostic to <em>dam</em> methylation state. DpnI, which also recognizes GATC but produces blunt ends, requires <em>dam</em> methylation in order to cleave. While resources like <a href="http://rebase.neb.com/cgi-bin/msublist">REbase</a><!-- raw HTML omitted --><strong>13</strong><!-- raw HTML omitted --> provide data on the specificity of methyltransferases across bacteria, predicting the methylation state of bacteria in complex communities is complicated by phase variation,<!-- raw HTML omitted --><strong>14</strong><!-- raw HTML omitted --> though long-read technologies are making meta-epigenomics more feasible.<!-- raw HTML omitted --><strong>15,16</strong><!-- raw HTML omitted -->
+(2) Many of the genomes available from PATRIC are incomplete and composed of multiple contigs.  This is especially true for the metagenome-assembled genomes, some of which are highly fragmented and composed of hundreds or thousands of contigs. For bacterial chromosomes that exist in PATRIC as fragments, it may be the case that some RE recognition sites occur in the gaps between contigs, though I expect such undercounting to be negligible.</p>
+<h4 id="results">Results</h4>
+<p>Plotting the distributions for the six chosen phyla, it&rsquo;s obvious that GC content underlies most of the differences in recognition sequence frequency at the phylum level. For example, looking specifically at 4-bp RE recognition sequences (figure below), GC-skewed recognition sequences like HhaI (GCGC) and BstUI (CGCG) are poorly represented across phyla whose genomes tend to be AT-rich, particularly Firmicutes and Fusobacteria. Likewise, the GC-rich genomes of Actinobacteria are predicted to be infrequently cut by AT-skewed enzymes like MseI (TTAA) and MluCI (AATT). Similar trends can be seen for enzymes with <a href="/img/posts/neb6_HABs_v9.png">6-bp</a> and <a href="/img/posts/neb8_HABs_v8.png">8-bp</a> recognition sequences.</p>
+<p><img src="/img/posts/neb4_HABs_v8.png" alt="Distribution of normalized recognition sequence frequencies for commercially available NEB 4-cutters across bacterial phyla of the human microbiome. The red line marks a normalized count frequency of 1, which represents the frequency at which a random 4-mer is expected to occur in a random genome, on average (1 occurence per 4^4 bp). Enzymes are ordered top-to-bottom by the median normalized count frequency across all genomes." title="NEB 4-cutter distribution across human-associated microbes"></p>
+<p>However, choosing a RE based solely on GC concordance between genomes and recognition sequences does not account for the biology of specific sequences. An interesting case is that of BfaI, which recognizes the CTAG tetramer. Despite having the same recognition sequence base composition as frequent-cutting enzymes like HpyCH4V (TGCA) and CviAII (CATG), BfaI is the least frequent 4-cutter across the bacterial genomes analyzed. Similar infrequency is seen for the 6-bp cutters that share a core CTAG tetramer, namely AvrII (CCTAGG), XbaI (TCTAGA), SpeI (ACTAGT), and NheI (GCTAGC). The relative rarity of CTAG is a trait conserved across bacterial genomes, and its specific depletion in protein-coding genes makes CTAG useful as a marker of intergenic regions.<!-- raw HTML omitted --><strong>17</strong><!-- raw HTML omitted --> Biologically, the depletion of CTAG in bacterial genomes is hypothesized to be related to the use of rare codons as a mechanism of global gene expression regulation<!-- raw HTML omitted --><strong>18,19</strong><!-- raw HTML omitted --> and may be consequence of sequence bias in VSP repair.<!-- raw HTML omitted --><strong>20,21</strong><!-- raw HTML omitted --></p>
+<p>So, what can we take from all this?  For metagenomic proximity ligation experiments, particularly experiments involving human microbiome samples, there are several REs that are minimally biased, though no option is perfect.  Concerning frequent-cutting enzymes with 4-bp recognition sequences, both HpyCH4V and AluI are evenly represented across diverse bacterial phyla, with the added benefit that the activities of both enzymes are unaffected by <em>dam</em> and <em>dcm</em> methylation. However, both HpyCH4V and AluI generate blunt ends, precluding these REs from use in experiments where sticky ends are needed for biotinylated dNTP incorporation.</p>
+<!-- raw HTML omitted -->
+<p>Among REs with 6-bp recognition sequences, EcoRI and BspHI appear to be the best choices for enzymes with minimal phyla-level bias in cut frequency. Additionally, both of these enzymes generate 5' overhangs that are amenable to polymerase incorporation of labeled nucleotides, though BspHI cutting is impaired by overlapping <em>dam</em> methylation.</p>
+<!-- raw HTML omitted -->
+<hr>
+<h5 id="references">References</h5>
+<!-- raw HTML omitted -->
+<pre><code>&lt;li&gt;Loenen WA, Dryden DT, Raleigh EA, Wilson GG, Murray NE. Highlights of the DNA cutters: a short history of the restriction enzymes. *Nucleic Acids Res*. 2014 Jan;42(1):3-19.&lt;/li&gt;
+&lt;li&gt;Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A, Amit I, Lajoie BR, Sabo PJ, Dorschner MO, Sandstrom R, Bernstein B, Bender MA, Groudine M, Gnirke A, Stamatoyannopoulos J, Mirny LA, Lander ES, Dekker J. Comprehensive mapping of long-range interactions reveals folding principles of the human genome. *Science*. 2009 Oct 9;326(5950):289-93.&lt;/li&gt;
+&lt;li&gt;Putnam NH, O'Connell BL, Stites JC, Rice BJ, Blanchette M, Calef R, Troll CJ, Fields A, Hartley PD, Sugnet CW, Haussler D, Rokhsar DS, Green RE. Chromosome-scale shotgun assembly using an *in vitro* method for long-range linkage. *Genome Res*. 2016 Mar;26(3):342-50.&lt;/li&gt;
+&lt;li&gt;Chen PB, Zhu LJ, Hainer SJ, McCannell KN, Fazzio TG. Unbiased chromatin accessibility profiling by RED-seq uncovers unique features of nucleosome variants *in vivo*. *BMC Genomics*. 2014 Dec 15;15(1):1104.&lt;/li&gt;
+&lt;li&gt;Chandradoss KR, Guthikonda PK, Kethavath S, Dass M, Singh H, Nayak R, Kurukuti S, Sandhu KS. Biased visibility in Hi-C datasets marks dynamically regulated condensed and decondensed chromatin states genome-wide. *BMC Genomics*. 2020 Feb 22;21(1):175.&lt;/li&gt;
+&lt;li&gt;Song L, Crawford GE. DNase-seq: a high-resolution technique for mapping active gene regulatory elements across the genome from mammalian cells. *Cold Spring Harb Protoc*. 2010 Feb;2010(2):pdb.prot5384.&lt;/li&gt;
+&lt;li&gt;Buenrostro JD, Wu B, Chang HY, Greenleaf WJ. ATAC-seq: A Method for Assaying Chromatin Accessibility Genome-Wide. *Curr Protoc Mol Biol*. 2015 Jan 5;109:21.29.1-21.29.9.&lt;/li&gt;
+&lt;li&gt;DeMaere MZ, Darling AE. bin3C: exploiting Hi-C sequencing data to accurately resolve metagenome-assembled genomes. *Genome Biol*. 2019 Feb 26;20(1):46.&lt;/li&gt;
+&lt;li&gt;Stalder T, Press MO, Sullivan S, Liachko I, Top EM. Linking the resistome and plasmidome to the microbiome. *ISME J*. 2019 Oct;13(10):2437-2446.&lt;/li&gt;
+&lt;li&gt;Kent AG, Vill AC, Shi Q, Satlin MJ, Brito IL. Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C. *Nat Commun*. 2020 Sep 1;11(1):4379.&lt;/li&gt;
+&lt;li&gt;Wattam AR, Abraham D, Dalay O, Disz TL, Driscoll T, Gabbard JL, Gillespie JJ, Gough R, Hix D, Kenyon R, Machi D, Mao C, Nordberg EK, Olson R, Overbeek R, Pusch GD, Shukla M, Schulman J, Stevens RL, Sullivan DE, Vonstein V, Warren A, Will R, Wilson MJ, Yoo HS, Zhang C, Zhang Y, Sobral BW. PATRIC, the bacterial bioinformatics database and analysis resource. *Nucleic Acids Res*. 2014 Jan;42(Database issue):D581-91.&lt;/li&gt;
+&lt;li&gt;Marçais G, Kingsford C. A fast, lock-free approach for efficient parallel counting of occurrences of k-mers. *Bioinformatics*. 2011 Mar 15;27(6):764-70.&lt;/li&gt;  
+&lt;li&gt;Roberts RJ, Vincze T, Posfai J, Macelis D. REBASE--a database for DNA restriction and modification: enzymes, genes and genomes. *Nucleic Acids Res*. 2015 Jan;43(Database issue):D298-9.&lt;/li&gt; 
+&lt;li&gt;Morovic W, Budinoff CR. Epigenetics: A New Frontier in Probiotic Research. *Trends Microbiol*. 2020 May 11:S0966-842X(20)30101-3.&lt;/li&gt;
+&lt;li&gt;Beaulaurier J, Zhu S, Deikus G, Mogno I, Zhang XS, Davis-Richardson A, Canepa R, Triplett EW, Faith JJ, Sebra R, Schadt EE, Fang G. Metagenomic binning and association of plasmids with bacterial host genomes using DNA methylation. *Nat Biotechnol*. 2018 Jan;36(1):61-69.&lt;/li&gt;
+&lt;li&gt;Beaulaurier J, Schadt EE, Fang G. Deciphering bacterial epigenomes using modern sequencing technologies. *Nat Rev Genet*. 2019 Mar;20(3):157-172.&lt;/li&gt;
+&lt;li&gt;Tang L, Zhu S, Mastriani E, Fang X, Zhou YJ, Li YG, Johnston RN, Guo Z, Liu GR, Liu SL. Conserved intergenic sequences revealed by CTAG-profiling in *Salmonella*: thermodynamic modeling for function prediction. *Sci Rep*. 2017 Mar 6;7:43565.&lt;/li&gt;
+&lt;li&gt;Chen GT, Inouye M. Role of the AGA/AGG codons, the rarest codons in global gene expression in Escherichia coli. *Genes Dev*. 1994 Nov 1;8(21):2641-52.&lt;/li&gt;
+&lt;li&gt;Blattner FR, Burland V, Plunkett G 3rd, Sofia HJ, Daniels DL. Analysis of the *Escherichia coli* genome. IV. DNA sequence of the region from 89.2 to 92.8 minutes. *Nucleic Acids Res*. 1993 Nov 25;21(23):5408-17.&lt;/li&gt;
+&lt;li&gt;Merkl R, Kröger M, Rice P, Fritz HJ. Statistical evaluation and biological interpretation of non-random abundance in the *E. coli* K-12 genome of tetra- and pentanucleotide sequences related to VSP DNA mismatch repair. *Nucleic Acids Res*. 1992 Apr 11;20(7):1657-62.&lt;/li&gt;
+&lt;li&gt;Gutiérrez G, Casadesús J, Oliver JL, Marín A. Compositional heterogeneity of the *Escherichia coli* genome: a role for VSP repair? *J Mol Evol*. 1994 Oct;39(4):340-6.&lt;/li&gt;
+</code></pre>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    
+    
+    
+</div>
+
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>
