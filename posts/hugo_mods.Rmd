@@ -1,0 +1,119 @@
+---
+title: "Blogdown site modifications"
+author: "Albert Vill"
+date: "07 Jan 2021"
+output: html_document
+tags: ['meta','hugo','blogdown']
+---
+
+There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is [*Creating Websites with R Markdown*](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the "how-to" guides. Here, I've collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements. For sure, there are better ways to implement the changes I describe, and my mixed use of markdown syntax with HTML can be considered hacky at best. But, for those like me who are unfamiliar with CSS, I hope this is useful.
+
+<font size="3" color="purple">
+  **Note**: some of the directory structures and file names mentioned herein are specific to the
+  [hyde-hyde theme](https://github.com/htr3n/hyde-hyde), though the edits should be applicable to the
+  analogous files from other Hugo flavors.
+</font>
+
+### How to scale images and format image captions
+
+When creating a blogdown post, standard image markdown can be used to insert pictures with captions.
+
+```
+![Caption text](/path/to/image.png "Alternative text")
+```
+While simple and functional, I think the aesthetics can be improved. First, by default, images are scaled to 100% of the page width, but I think some flanking whitespace looks nice. RStudio IDE supports [Pandoc](https://bookdown.org/yihui/bookdown/pandoc.html) notation, so you can simply include a percent width parameter in brackets after the image. Adding `center` tags aligns the picture in the center of the page, but newlines between the tags and the image text are needed in order to render the caption.
+
+```
+# This:
+<center>
+
+![Caption text](/path/to/image.png "Alternative text"){ width=50% }
+
+</center>
+
+# Not this:
+<center>
+![Caption text](/path/to/image.png "Alternative text"){ width=50% }
+</center>
+```
+
+Second, I found the default caption text to be too similar to the text in the post body. To remedy this, I include the `style` tag with attributes for `p.caption` in the body of my Rmarkdown posts, specifying the size, color, alignment, and left/right margins of the caption as a percent of page width. 
+
+```
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: purple;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+</style>
+```
+
+Altogether, these code snippets make for nicely scaled images with captions that stand out from the main text. 
+
+```
+<center>
+
+![So regal. Such panache.](/img/posts/sunny.jpg "His royal majesty, Sunny"){ width=50% }
+
+</center>
+```
+<center>
+
+![So regal. Such panache.](/img/posts/sunny.jpg "His royal majesty, Sunny"){ width=50% }
+
+</center>
+
+### How to add and change icons for social accounts
+
+The `config.toml` file from the hyde-hyde example site includes a preconfigured list of social accounts that can be included in the sidebar, some of which are commented out. Some popular websites are not included in this list; specifically, I wanted to include an icon linking to my Stack Exchange network account. To accomplish this, I edited `layouts/partials/sidebar/social.html` to include the following:
+
+```
+{{ with .Site.Params.social.stackexchange }}
+	<a href="https://biology.stackexchange.com/users/{{.}}" rel="me"><i class="fab fa-stack-exchange fa-lg" aria-hidden="true"></i></a>
+	{{ end }}
+```
+
+Then, I added the `stackexchange` parameter with my Stack Exchange user ID and name to `config.toml`:
+
+```
+## Social Accounts
+[params.social]
+    stackexchange = "52196/acvill"
+    linkedin = "albert-vill-a457821a1"
+    twitter = "_AlbertVill"
+    orcid = "0000-0001-5982-0298"
+    email = "albertcvill@gmail.com"
+```
+
+Note that the order of icons in the sidebar is determined by the order of sites provided in `social.html` and not the order of parameters listed in `[params.social]`. Explicitly, the left-right order of icons in the sidebar corresponds to the top-bottom order of sites in `social.html`. From my searching, Hugo seems to source its unicode glyphs from [Font Awesome](https://fontawesome.com/icons). This means that you can easily personalize your Hugo site by swapping out the default icon HTML for the HTML provided on each Font awesome icon page. For example, hyde-hyde uses <i class="fas fa-at"></i> to represent email.
+
+```
+<i class="fas fa-at"></i>
+```
+But this can be swapped for a variety of other icons. 
+
+```
+<i class="fab fa-envelope"></i>
+<i class="fab fa-envelope-square"></i>
+<i class="fab fa-paper-plane"></i>
+```
+<i class="fas fa-envelope"></i>
+<i class="fas fa-envelope-square"></i>
+<i class="fas fa-paper-plane"></i>
+
+### How to change the maximum width of Hugo site pages
+
+When viewed on a desktop, hyde-hyde leaves a lot of white space on the right side of the page. Ryan Cummings describes a simple fix in their [blog](https://blog.ryanwcummings.com/posts/hugo-width-adjustment/). Just navigate to `assets/scss/hyde-hyde/_variables.scss` and edit the `$content-max-width` variable. 
+
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: purple;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+</style>

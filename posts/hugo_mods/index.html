@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.1" />
+
+    
+    
+    
+
+<title>Blogdown site modifications • Albert Vill</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blogdown site modifications"/>
+<meta name="twitter:description" content="There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements."/>
+
+<meta property="og:title" content="Blogdown site modifications" />
+<meta property="og:description" content="There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://acvill.github.io/posts/hugo_mods/" />
+<meta property="article:published_time" content="2021-01-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-07T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.ac4380ee361702b17c210ce9b85a4d2bf0fd3f0333c9b538ea2a2918f6418081.css" integrity="sha256-rEOA7jYXArF8IQzpuFpNK/D9PwMzybU46iopGPZBgIE=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/img/favicon-16x16.png">
+    
+    
+
+    
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://acvill.github.io/">
+        
+          Albert Vill
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://acvill.github.io/img/about/headshot2_square.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Albert Vill</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/about">
+						<span>About</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/cv">
+						<span>CV</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+  
+	<a href="https://biology.stackexchange.com/users/52196/acvill" rel="me"><i class="fab fa-stack-exchange fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://twitter.com/_AlbertVill" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/albert-vill-a457821a1" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://orcid.org/0000-0001-5982-0298" rel="me"><i class="fab fa-orcid fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="mailto:albertcvill@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 - 2021 acvill
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Blogdown site modifications</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> 7 Jan 2021
+    
+    
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/meta">meta</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/hugo">hugo</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/blogdown">blogdown</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 4 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is <a href="https://bookdown.org/yihui/blogdown/"><em>Creating Websites with R Markdown</em></a> by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements. For sure, there are better ways to implement the changes I describe, and my mixed use of markdown syntax with HTML can be considered hacky at best. But, for those like me who are unfamiliar with CSS, I hope this is useful.</p>
+<p><font size="3" color="purple">
+<strong>Note</strong>: some of the directory structures and file names mentioned herein are specific to the
+<a href="https://github.com/htr3n/hyde-hyde">hyde-hyde theme</a>, though the edits should be applicable to the
+analogous files from other Hugo flavors.
+</font></p>
+<div id="how-to-scale-images-and-format-image-captions" class="section level3">
+<h3>How to scale images and format image captions</h3>
+<p>When creating a blogdown post, standard image markdown can be used to insert pictures with captions.</p>
+<pre><code>![Caption text](/path/to/image.png &quot;Alternative text&quot;)</code></pre>
+<p>While simple and functional, I think the aesthetics can be improved. First, by default, images are scaled to 100% of the page width, but I think some flanking whitespace looks nice. RStudio IDE supports <a href="https://bookdown.org/yihui/bookdown/pandoc.html">Pandoc</a> notation, so you can simply include a percent width parameter in brackets after the image. Adding <code>center</code> tags aligns the picture in the center of the page, but newlines between the tags and the image text are needed in order to render the caption.</p>
+<pre><code># This:
+&lt;center&gt;
+
+![Caption text](/path/to/image.png &quot;Alternative text&quot;){ width=50% }
+
+&lt;/center&gt;
+
+# Not this:
+&lt;center&gt;
+![Caption text](/path/to/image.png &quot;Alternative text&quot;){ width=50% }
+&lt;/center&gt;</code></pre>
+<p>Second, I found the default caption text to be too similar to the text in the post body. To remedy this, I include the <code>style</code> tag with attributes for <code>p.caption</code> in the body of my Rmarkdown posts, specifying the size, color, alignment, and left/right margins of the caption as a percent of page width.</p>
+<pre><code>&lt;style&gt;
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: purple;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+&lt;/style&gt;</code></pre>
+<p>Altogether, these code snippets make for nicely scaled images with captions that stand out from the main text.</p>
+<pre><code>&lt;center&gt;
+
+![So regal. Such panache.](/img/posts/sunny.jpg &quot;His royal majesty, Sunny&quot;){ width=50% }
+
+&lt;/center&gt;</code></pre>
+<center>
+<div class="figure">
+<img src="/img/posts/sunny.jpg" title="His royal majesty, Sunny" style="width:50.0%" alt="" />
+<p class="caption">So regal. Such panache.</p>
+</div>
+</center>
+</div>
+<div id="how-to-add-and-change-icons-for-social-accounts" class="section level3">
+<h3>How to add and change icons for social accounts</h3>
+<p>The <code>config.toml</code> file from the hyde-hyde example site includes a preconfigured list of social accounts that can be included in the sidebar, some of which are commented out. Some popular websites are not included in this list; specifically, I wanted to include an icon linking to my Stack Exchange network account. To accomplish this, I edited <code>layouts/partials/sidebar/social.html</code> to include the following:</p>
+<pre><code>{{ with .Site.Params.social.stackexchange }}
+    &lt;a href=&quot;https://biology.stackexchange.com/users/{{.}}&quot; rel=&quot;me&quot;&gt;&lt;i class=&quot;fab fa-stack-exchange fa-lg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    {{ end }}</code></pre>
+<p>Then, I added the <code>stackexchange</code> parameter with my Stack Exchange user ID and name to <code>config.toml</code>:</p>
+<pre><code>## Social Accounts
+[params.social]
+    stackexchange = &quot;52196/acvill&quot;
+    linkedin = &quot;albert-vill-a457821a1&quot;
+    twitter = &quot;_AlbertVill&quot;
+    orcid = &quot;0000-0001-5982-0298&quot;
+    email = &quot;albertcvill@gmail.com&quot;</code></pre>
+<p>Note that the order of icons in the sidebar is determined by the order of sites provided in <code>social.html</code> and not the order of parameters listed in <code>[params.social]</code>. Explicitly, the left-right order of icons in the sidebar corresponds to the top-bottom order of sites in <code>social.html</code>. From my searching, Hugo seems to source its unicode glyphs from <a href="https://fontawesome.com/icons">Font Awesome</a>. This means that you can easily personalize your Hugo site by swapping out the default icon HTML for the HTML provided on each Font awesome icon page. For example, hyde-hyde uses <i class="fas fa-at"></i> to represent email.</p>
+<pre><code>&lt;i class=&quot;fas fa-at&quot;&gt;&lt;/i&gt;</code></pre>
+<p>But this can be swapped for a variety of other icons.</p>
+<pre><code>&lt;i class=&quot;fab fa-envelope&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fab fa-envelope-square&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fab fa-paper-plane&quot;&gt;&lt;/i&gt;</code></pre>
+<p><i class="fas fa-envelope"></i>
+<i class="fas fa-envelope-square"></i>
+<i class="fas fa-paper-plane"></i></p>
+</div>
+<div id="how-to-change-the-maximum-width-of-hugo-site-pages" class="section level3">
+<h3>How to change the maximum width of Hugo site pages</h3>
+<p>When viewed on a desktop, hyde-hyde leaves a lot of white space on the right side of the page. Ryan Cummings describes a simple fix in their <a href="https://blog.ryanwcummings.com/posts/hugo-width-adjustment/">blog</a>. Just navigate to <code>assets/scss/hyde-hyde/_variables.scss</code> and edit the <code>$content-max-width</code> variable.</p>
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: purple;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+</style>
+</div>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    
+    
+    
+</div>
+
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>

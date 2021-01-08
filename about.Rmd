@@ -1,0 +1,18 @@
+---
+title: "About"
+author: "Albert Vill"
+date: "22 Dec 2020"
+output: html_document
+---
+
+Husband :couple: Scientist :microscope: Phage Phanatic :space_invader:
+
+Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at Cornell University.  My scientific interests include bacterial genomics, host-microbe interactions, and all things bacteriophage.
+
+I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Come ask a question!  
+
+![](https://biology.stackexchange.com/users/flair/52196.png)
+
+I have two cats :cat2::cat2:, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo). 
+
+![](/img/about/butchy_sunny1.jpg "Butchy and Sunny, 2020")

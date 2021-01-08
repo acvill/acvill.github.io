@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Albert Vill</title>
+    <link>https://acvill.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Albert Vill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogdown site modifications</title>
+      <link>https://acvill.github.io/posts/hugo_mods/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/hugo_mods/</guid>
+      <description>There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements.</description>
+    </item>
+    
+  </channel>
+</rss>

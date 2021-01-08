@@ -6,7 +6,16 @@
     <description>Recent content on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogdown site modifications</title>
+      <link>https://acvill.github.io/posts/hugo_mods/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/hugo_mods/</guid>
+      <description>There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements.</description>
+    </item>
+    
     <item>
       <title>Restriction enzyme sites across bacterial genomes - implications for metagenomics</title>
       <link>https://acvill.github.io/posts/restenz/</link>
@@ -24,8 +33,8 @@
       <guid>https://acvill.github.io/about/</guid>
       <description>Husband 👫 Scientist 🔬 Phage Phanatic 👾
 Currently, I am a PhD candidate in the Brito Lab at Cornell University. My scientific interests include bacterial genomics, host-microbe interactions, and all things bacteriophage.
-I&amp;rsquo;m a regular contributor on Biology Stack Exchange. Come ask a question!
-I have two cats 🐈🐈, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo).</description>
+I’m a regular contributor on Biology Stack Exchange. Come ask a question!
+I have two cats 🐈🐈, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo).</description>
     </item>
     
     <item>
