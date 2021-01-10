@@ -1,5 +1,5 @@
 ---
-title: "Blogdown site modifications"
+title: "Blogdown site personalization"
 author: "Albert Vill"
 date: "07 Jan 2021"
 output: html_document

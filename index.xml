@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blogdown site modifications</title>
+      <title>Blogdown site personalization</title>
       <link>https://acvill.github.io/posts/hugo_mods/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       
@@ -35,6 +35,16 @@
 Currently, I am a PhD candidate in the Brito Lab at Cornell University. My scientific interests include bacterial genomics, host-microbe interactions, and all things bacteriophage.
 I’m a regular contributor on Biology Stack Exchange. Come ask a question!
 I have two cats 🐈🐈, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo).</description>
+    </item>
+    
+    <item>
+      <title>Contact Me</title>
+      <link>https://acvill.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/contact/</guid>
+      <description>SUBMIT
+</description>
     </item>
     
     <item>
