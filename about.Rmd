@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About me"
 author: "Albert Vill"
 date: "22 Dec 2020"
 output: html_document
@@ -9,18 +9,14 @@ Husband :couple: Scientist :microscope: Phage Phanatic :space_invader:
 
 Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at Cornell University.  My scientific interests include bacterial genomics, host-microbe interactions, and all things bacteriophage.
 
-I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Come ask a question!  
+<a href="https://biology.stackexchange.com/users/52196/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="208" height="58" style="float:right" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
 
-<center>
-
-![](https://biology.stackexchange.com/users/flair/52196.png)
-
-</center>
+I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Come ask a question!
 
 I have two cats :cat2::cat2:, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo). 
 
 <center>
 
-![](/img/about/butchy_sunny1.jpg "Butchy and Sunny, 2020"){ width=70% }
+![](/img/about/butchy_sunny1.jpg "Butchy and Sunny, 2020"){ width=60% }
 
 </center>
