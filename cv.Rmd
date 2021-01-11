@@ -10,7 +10,7 @@ Last updated 19 December 2020
 
 ---
 
-## <span style="color:purple">Education</span>
+## <span style="color:#21436e">Education</span>
 
 #### Bachelor of Science, *Magna Cum Laude*, Gettysburg College
 Biochemistry and Molecular Biology major, 3.70 GPA  
@@ -18,7 +18,7 @@ Lincoln Scholar – highest merit-based scholarship awarded
 
 ---
 
-## <span style="color:purple">Research Experience</span>
+## <span style="color:#21436e">Research Experience</span>
 
 #### PhD Candidate – Lab of Dr. Ilana Brito, Cornell University
 Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease - **Spring 2017 – present**  
@@ -28,7 +28,7 @@ Characterizing soil bacteriophages by host range screens and comparative genomic
 
 ---
 
-## <span style="color:purple">Publications</span>
+## <span style="color:#21436e">Publications</span>
 
 Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nat Commun*. **2020** Sep 1;11(1):4379.
 
@@ -43,7 +43,7 @@ Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, H
 
 ---
 
-## <span style="color:purple">Honors and Awards</span>
+## <span style="color:#21436e">Honors and Awards</span>
 
 Distinguished Scholar, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) - **2019**  
 Honorable Mention, NSF Graduate Research Fellowship - **2018**  

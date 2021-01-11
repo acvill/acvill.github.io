@@ -123,7 +123,7 @@ Among REs with 6-bp recognition sequences, EcoRI and BspHI appear to be the best
 p.caption {
   font-size: 0.8em;
   text-align: center;
-  color: purple;
+  color: #21436e;
   margin-right: 5%;
   margin-left: 5%;
 }

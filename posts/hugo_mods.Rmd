@@ -104,9 +104,11 @@ But this can be swapped for a variety of other icons.
 <i class="fas fa-envelope-square"></i>
 <i class="fas fa-paper-plane"></i>
 
-### How to change the maximum width of Hugo site pages
+### How to change page width, sidebar color, and other parameters
 
 When viewed on a desktop, hyde-hyde leaves a lot of white space on the right side of the page. Ryan Cummings describes a simple fix in their [blog](https://blog.ryanwcummings.com/posts/hugo-width-adjustment/). Just navigate to `assets/scss/hyde-hyde/_variables.scss` and edit the `$content-max-width` variable. 
+
+Note that this file controls other site parameters, too, like `$sidebar-color` and the font families used in rendered posts. 
 
 <style>
 p.caption {
