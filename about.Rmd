@@ -11,8 +11,16 @@ Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at 
 
 I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Come ask a question!  
 
+<center>
+
 ![](https://biology.stackexchange.com/users/flair/52196.png)
+
+</center>
 
 I have two cats :cat2::cat2:, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo). 
 
-![](/img/about/butchy_sunny1.jpg "Butchy and Sunny, 2020")
+<center>
+
+![](/img/about/butchy_sunny1.jpg "Butchy and Sunny, 2020"){ width=70% }
+
+</center>
