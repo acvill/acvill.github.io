@@ -110,6 +110,12 @@ When viewed on a desktop, hyde-hyde leaves a lot of white space on the right sid
 
 Note that this file controls other site parameters, too, like `$sidebar-color` and the font families used in rendered posts. 
 
+### Other helpful links
+
+- [Where are favicon settings and file located?](https://github.com/htr3n/hyde-hyde/issues/94)  
+- [Setting the meta description in Hugo's hyde-hyde theme](https://patrickpeeters.com/2020/12/setting-the-meta-description-in-hugos-hyde-hyde-theme/)  
+
+
 <style>
 p.caption {
   font-size: 0.9em;
