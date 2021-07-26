@@ -5,6 +5,16 @@
     <link>https://acvill.github.io/categories/</link>
     <description>Recent content in Categories on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://acvill.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate><atom:link href="https://acvill.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R</title>
+      <link>https://acvill.github.io/categories/r/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://acvill.github.io/categories/r/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
