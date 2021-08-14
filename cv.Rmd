@@ -5,8 +5,8 @@ date: ""
 output: html_document
 ---
 
-Last updated 19 December 2020  
-[PDF version](/AVill_CV_19Dec2020.pdf)
+Last updated 14 August 2021  
+[PDF version](/AVill_CV_14Aug2021.pdf)
 
 ---
 
@@ -45,6 +45,7 @@ Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, H
 
 ## <span style="color:#21436e">Honors and Awards</span>
 
+Seed Grant Recipient, [Genomics Innovation Hub](https://www.biotech.cornell.edu/core-facilities-brc/facilities/genomics-innovation-hub) - **2020**  
 Distinguished Scholar, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) - **2019**  
 Honorable Mention, NSF Graduate Research Fellowship - **2018**  
 Herzog Teaching Fellow, Gettysburg College - **2015**  

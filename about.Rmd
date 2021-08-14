@@ -1,18 +1,40 @@
 ---
 title: "About me"
 author: "Albert Vill"
-date: "22 Dec 2020"
+date: "14 Aug 2021"
 output: html_document
 ---
 
-Husband :couple: Scientist :microscope: Phage Phanatic :space_invader:
+### Background
 
-Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at Cornell University in the field of Genetics, Genomics & Development.  I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage.
+I am from New Jersey. New Yorkers may think they have better bagels and pizza, but they're wrong. 
 
-I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Come ask a question!
+I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and molecular biology. As a first-generation college student, I got my initial exposure to scientific research in the [PhagesRock lab](https://xsigsummer.wordpress.com/?s=phage) under the mentorship of professors Véronique Delesalle and Greg Krukonis. 
 
-<a href="https://biology.stackexchange.com/users/52196/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="208" height="58" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at Cornell University in the field of Genetics, Genomics & Development. My graduate work involves the application of different sequencing techniques to understand the movement of mobile genetic elements in the human gut microbiome.  
 
-I have two cats :cat2::cat2:, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo). 
+### Research
 
-![](/img/about/butchy_sunny1.jpg "Butchy and Sunny, 2020"){ width=60% }
+I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based NGS analysis tools. 
+
+In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.com/) on the use of proximity ligation sequencing (commonly called Hi-C) to resolve mobile element carriage in the gut microbiomes of cancer patients. We found that Hi-C could detect the putative transfer of multi-drug resistance genes between commensal microbes and pathogens within individual patients through time. You can read more about it in my Twitter thread or Ilana's [*Behind the Paper*](https://go.nature.com/2FJPxqX) highlight.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited for the publication of my first paper as a PhD student in the Brito Lab <a href="https://twitter.com/ilanabrito123?ref_src=twsrc%5Etfw">@ilanabrito123</a> <a href="https://twitter.com/CornellBME?ref_src=twsrc%5Etfw">@CornellBME</a> <a href="https://twitter.com/NatureComms?ref_src=twsrc%5Etfw">@NatureComms</a>: &quot;Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C&quot; <a href="https://t.co/4ZpBtGDA8m">https://t.co/4ZpBtGDA8m</a><br><br>1/10</p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1300856406787207171?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://elifesciences.org/articles/66834). My current projects involve improvements to metagenomic Hi-C to enhance plasmid capture and microbiome metatranscriptomics. 
+
+### Fun Stuff
+
+I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Below are some of my favorite questions I've answered. Come ask more! 
+
+- [Will all bacteria become resistant against all antibiotics in the long term?](https://biology.stackexchange.com/questions/90115)
+- [Does direction relative to origin of replication matter on small plasmids?](https://biology.stackexchange.com/questions/100120)
+- [Which proteins are part of the most different protein complexes?](https://biology.stackexchange.com/questions/90625)
+- [What fraction of bacterial proteins are membrane bound?](https://biology.stackexchange.com/questions/98434)
+- [How is incomplete dominance explained at the molecular level?](https://biology.stackexchange.com/questions/88534)
+- [How are protein species distributed over cell types?](https://biology.stackexchange.com/questions/89937)
+
+<a href="https://stackexchange.com/users/10848131/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="208" height="58" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
+
+
+

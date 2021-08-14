@@ -8,6 +8,17 @@
     <language>en</language>
     <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About me</title>
+      <link>https://acvill.github.io/about/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/about/</guid>
+      <description>BackgroundI am from New Jersey. New Yorkers may think they have better bagels and pizza, but they’re wrong.
+I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and molecular biology. As a first-generation college student, I got my initial exposure to scientific research in the PhagesRock lab under the mentorship of professors Véronique Delesalle and Greg Krukonis.
+Currently, I am a PhD candidate in the Brito Lab at Cornell University in the field of Genetics, Genomics &amp;amp; Development.</description>
+    </item>
+    
+    <item>
       <title>Blogdown site personalization</title>
       <link>https://acvill.github.io/posts/hugo_mods/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
@@ -23,19 +34,6 @@
       
       <guid>https://acvill.github.io/posts/restenz/</guid>
       <description>Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1 Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3 Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6 and ATAC-seq.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://acvill.github.io/about/</link>
-      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://acvill.github.io/about/</guid>
-      <description>Husband 👫 Scientist 🔬 Phage Phanatic 👾
-Currently, I am a PhD candidate in the Brito Lab at Cornell University in the field of Genetics, Genomics &amp;amp; Development. I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage.
-I’m a regular contributor on Biology Stack Exchange. Come ask a question!
-
-I have two cats 🐈🐈, brothers named Butch Cassidy (black) and the Sundance Kid (tuxedo).</description>
     </item>
     
     <item>
@@ -55,7 +53,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/contact/</guid>
-      <description>
+      <description>
 SUBMIT
 </description>
     </item>
@@ -66,7 +64,7 @@ SUBMIT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/cv/</guid>
-      <description>Last updated 19 December 2020
+      <description>Last updated 14 August 2021
 PDF version
 EducationBachelor of Science, Magna Cum Laude, Gettysburg CollegeBiochemistry and Molecular Biology major, 3.70 GPA
 Lincoln Scholar – highest merit-based scholarship awarded
