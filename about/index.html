@@ -31,8 +31,8 @@ I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and mole
 Currently, I am a PhD candidate in the Brito Lab at Cornell University in the field of Genetics, Genomics &amp; Development." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://acvill.github.io/about/" />
-<meta property="article:published_time" content="2021-08-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-08-14T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
+<meta property="article:published_time" content="2021-08-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-27T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
 
 
     
@@ -207,7 +207,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> 14 Aug 2021
+      <i class="fas fa-calendar-alt"></i> 27 Aug 2021
     
     
     
@@ -225,14 +225,14 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
 
 
-<div id="background" class="section level3">
-<h3>Background</h3>
+<div id="background" class="section level2">
+<h2>Background</h2>
 <p>I am from New Jersey. New Yorkers may think they have better bagels and pizza, but they’re wrong.</p>
 <p>I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and molecular biology. As a first-generation college student, I got my initial exposure to scientific research in the <a href="https://xsigsummer.wordpress.com/?s=phage">PhagesRock lab</a> under the mentorship of professors Véronique Delesalle and Greg Krukonis.</p>
 <p>Currently, I am a PhD candidate in the <a href="https://www.britolab.org">Brito Lab</a> at Cornell University in the field of Genetics, Genomics &amp; Development. My graduate work involves the application of different sequencing techniques to understand the movement of mobile genetic elements in the human gut microbiome.</p>
 </div>
-<div id="research" class="section level3">
-<h3>Research</h3>
+<div id="research" class="section level2">
+<h2>Research</h2>
 <p>I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based NGS analysis tools.</p>
 <p>In 2020, I co-authored a paper with <a href="https://alyssakent.weebly.com/">Dr. Alyssa Kent</a> on the use of proximity ligation sequencing (commonly called Hi-C) to resolve mobile element carriage in the gut microbiomes of cancer patients. We found that Hi-C could detect the putative transfer of multi-drug resistance genes between commensal microbes and pathogens within individual patients through time. You can read more about it in my Twitter thread or Ilana’s <a href="https://go.nature.com/2FJPxqX"><em>Behind the Paper</em></a> highlight.</p>
 <blockquote class="twitter-tweet">
@@ -244,8 +244,32 @@ Excited for the publication of my first paper as a PhD student in the Brito Lab 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p>The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like <a href="https://elifesciences.org/articles/66834">OIL-PCR</a>. My current projects involve improvements to metagenomic Hi-C to enhance plasmid capture and microbiome metatranscriptomics.</p>
 </div>
-<div id="fun-stuff" class="section level3">
-<h3>Fun Stuff</h3>
+<div id="side-projects" class="section level2">
+<h2>Side Projects</h2>
+<p>I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Below are some small projects that were born from my research needs that I’ve adapted for sharing.</p>
+<div id="bracken_plot-a-shiny-app-for-taxonomic-abundance-visualization" class="section level4">
+<h4><a href="https://acvill.shinyapps.io/bracken_plot/"><strong>bracken_plot</strong></a> – a shiny app for taxonomic abundance visualization</h4>
+<p>As a graduate student studying metagenomics, I frequently use Derrick Wood’s <a href="https://doi.org/10.1186/s13059-019-1891-0">Kraken2</a> software for accurate and lightning-fast classification of short reads. <a href="https://doi.org/10.7717/peerj-cs.104">Bracken</a> is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a <a href="https://acvill.shinyapps.io/bracken_plot/">simple shiny app</a> for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. Visit the <a href="https://github.com/acvill/bracken_plot">bracken_plot GitHub repo</a> for a tutorial with example files.</p>
+<center>
+<div class="figure">
+<img src="/img/about/bracken_barplot.png" title="Bracken bar plot" style="width:100.0%" alt="" />
+<p class="caption">Example output from the bracken_plot app showing genus-level relative abudance across oral microbiome samples. Don’t mind the human read contamination!</p>
+</div>
+</center>
+</div>
+<div id="findmotifs.r-an-r-script-for-dna-motif-identification-in-metagenomic-bins" class="section level4">
+<h4><a href="https://github.com/acvill/findmotifs"><strong>findmotifs.R</strong></a> – an R script for DNA motif identification in metagenomic bins</h4>
+<p>To understand the genetic context and biological relevance of DNA motifs, it’s often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I’ve written findmotifs.R – an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr. A tutorial with example files is available on the <a href="https://github.com/acvill/findmotifs#example">findmotifs GitHub repo</a>.</p>
+<center>
+<div class="figure">
+<img src="/img/about/findmotifs2.PNG" title="command line screenshot of findmotifs in action" style="width:100.0%" alt="" />
+<p class="caption">findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.</p>
+</div>
+</center>
+</div>
+</div>
+<div id="fun-stuff" class="section level2">
+<h2>Fun Stuff</h2>
 <p>I’m a regular contributor on <a href="https://biology.stackexchange.com/users/52196/acvill">Biology Stack Exchange</a>. Below are some of my favorite questions I’ve answered. Come ask more!</p>
 <ul>
 <li><a href="https://biology.stackexchange.com/questions/90115">Will all bacteria become resistant against all antibiotics in the long term?</a></li>
@@ -256,6 +280,15 @@ Excited for the publication of my first paper as a PhD student in the Brito Lab 
 <li><a href="https://biology.stackexchange.com/questions/89937">How are protein species distributed over cell types?</a></li>
 </ul>
 <p><a href="https://stackexchange.com/users/10848131/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="208" height="58" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a></p>
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: purple;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+</style>
 </div>
 
   </div>

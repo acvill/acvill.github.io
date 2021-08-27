@@ -1,11 +1,11 @@
 ---
 title: "About me"
 author: "Albert Vill"
-date: "14 Aug 2021"
+date: "27 Aug 2021"
 output: html_document
 ---
 
-### Background
+## Background
 
 I am from New Jersey. New Yorkers may think they have better bagels and pizza, but they're wrong. 
 
@@ -13,7 +13,7 @@ I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and mole
 
 Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at Cornell University in the field of Genetics, Genomics & Development. My graduate work involves the application of different sequencing techniques to understand the movement of mobile genetic elements in the human gut microbiome.  
 
-### Research
+## Research
 
 I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based NGS analysis tools. 
 
@@ -23,7 +23,31 @@ In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.
 
 The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://elifesciences.org/articles/66834). My current projects involve improvements to metagenomic Hi-C to enhance plasmid capture and microbiome metatranscriptomics. 
 
-### Fun Stuff
+## Side Projects
+
+I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Below are some small projects that were born from my research needs that I've adapted for sharing.
+
+#### [**bracken_plot**](https://acvill.shinyapps.io/bracken_plot/) -- a shiny app for taxonomic abundance visualization
+
+As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. Visit the [bracken_plot GitHub repo](https://github.com/acvill/bracken_plot) for a tutorial with example files. 
+
+<center>
+
+![Example output from the bracken_plot app showing genus-level relative abudance across oral microbiome samples. Don't mind the human read contamination!](/img/about/bracken_barplot.png "Bracken bar plot"){ width=100% }
+
+</center>
+
+#### [**findmotifs.R**](https://github.com/acvill/findmotifs) -- an R script for DNA motif identification in metagenomic bins
+
+To understand the genetic context and biological relevance of DNA motifs, it's often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I've written findmotifs.R -- an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr. A tutorial with example files is available on the [findmotifs GitHub repo](https://github.com/acvill/findmotifs#example).
+
+<center>
+
+![findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.](/img/about/findmotifs2.PNG "command line screenshot of findmotifs in action"){ width=100% }
+
+</center>
+
+## Fun Stuff
 
 I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Below are some of my favorite questions I've answered. Come ask more! 
 
@@ -36,5 +60,13 @@ I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexcha
 
 <a href="https://stackexchange.com/users/10848131/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="208" height="58" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
 
-
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: purple;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+</style>
 
