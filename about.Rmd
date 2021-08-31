@@ -17,7 +17,7 @@ Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at 
 
 I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based NGS analysis tools. 
 
-In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.com/) on the use of proximity ligation sequencing (commonly called Hi-C) to resolve mobile element carriage in the gut microbiomes of cancer patients. We found that Hi-C could detect the putative transfer of multi-drug resistance genes between commensal microbes and pathogens within individual patients through time. You can read more about it in my Twitter thread or Ilana's [*Behind the Paper*](https://go.nature.com/2FJPxqX) highlight.
+In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.com/) on the use of proximity ligation sequencing (commonly called Hi-C) to resolve mobile element carriage in the gut microbiomes of cancer patients. We found that Hi-C could detect the putative transfer of multi-drug resistance genes between commensal microbes and pathogens within individual patients through time. You can read more about it in Ilana's [*Behind the Paper*](https://go.nature.com/2FJPxqX) highlight or in my Twitter thread:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited for the publication of my first paper as a PhD student in the Brito Lab <a href="https://twitter.com/ilanabrito123?ref_src=twsrc%5Etfw">@ilanabrito123</a> <a href="https://twitter.com/CornellBME?ref_src=twsrc%5Etfw">@CornellBME</a> <a href="https://twitter.com/NatureComms?ref_src=twsrc%5Etfw">@NatureComms</a>: &quot;Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C&quot; <a href="https://t.co/4ZpBtGDA8m">https://t.co/4ZpBtGDA8m</a><br><br>1/10</p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1300856406787207171?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -64,7 +64,7 @@ I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexcha
 p.caption {
   font-size: 0.9em;
   text-align: center;
-  color: purple;
+  color: #7f1cad;
   margin-right: 5%;
   margin-left: 5%;
 }

@@ -8,11 +8,7 @@ tags: ['meta','hugo','blogdown']
 
 There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is [*Creating Websites with R Markdown*](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the "how-to" guides. Here, I've collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements. For sure, there are better ways to implement the changes I describe, and my mixed use of markdown syntax with HTML can be considered hacky at best. But, for those like me who are unfamiliar with CSS, I hope this is useful.
 
-<font size="3" color="purple">
-  **Note**: some of the directory structures and file names mentioned herein are specific to the
-  [hyde-hyde theme](https://github.com/htr3n/hyde-hyde), though the edits should be applicable to the
-  analogous files from other Hugo flavors.
-</font>
+**Note**: some of the directory structures and file names mentioned herein are specific to the [hyde-hyde theme](https://github.com/htr3n/hyde-hyde), though the edits should be applicable to the analogous files from other Hugo flavors.
 
 ### How to scale images and format image captions
 
@@ -44,7 +40,7 @@ Second, I found the default caption text to be too similar to the text in the po
 p.caption {
   font-size: 0.9em;
   text-align: center;
-  color: purple;
+  color: #7f1cad;
   margin-right: 5%;
   margin-left: 5%;
 }
@@ -121,7 +117,7 @@ Note that this file controls other site parameters, too, like `$sidebar-color` a
 p.caption {
   font-size: 0.9em;
   text-align: center;
-  color: purple;
+  color: #7f1cad;
   margin-right: 5%;
   margin-left: 5%;
 }

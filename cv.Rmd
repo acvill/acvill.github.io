@@ -6,11 +6,11 @@ output: html_document
 ---
 
 Last updated 14 August 2021  
-[PDF version](/AVill_CV_14Aug2021.pdf)
+[**PDF version**](/AVill_CV_14Aug2021.pdf)
 
 ---
 
-## <span style="color:#21436e">Education</span>
+## Education
 
 #### Bachelor of Science, *Magna Cum Laude*, Gettysburg College
 Biochemistry and Molecular Biology major, 3.70 GPA  
@@ -18,7 +18,7 @@ Lincoln Scholar – highest merit-based scholarship awarded
 
 ---
 
-## <span style="color:#21436e">Research Experience</span>
+## Research Experience
 
 #### PhD Candidate – Lab of Dr. Ilana Brito, Cornell University
 Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease - **Spring 2017 – present**  
@@ -28,7 +28,7 @@ Characterizing soil bacteriophages by host range screens and comparative genomic
 
 ---
 
-## <span style="color:#21436e">Publications</span>
+## Publications
 
 Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nat Commun*. **2020** Sep 1;11(1):4379.
 
@@ -38,12 +38,12 @@ Delesalle VA, Tanke NT, **Vill AC**, Krukonis GP. [Testing hypotheses for the pr
 
 Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, Hendrix RW, Lawrence JG, Hatfull GF; **Science Education Alliance Phage Hunters Advancing Genomics and Evolutionary Science** <span style="color:red">‡</span>; Phage Hunters Integrating Research and Education; Mycobacterial Genetics Course. [Whole genome comparison of a large collection of mycobacteriophages reveals a continuum of phage genetic diversity.](https://doi.org/10.7554/elife.06416) *eLife*. **2015** Apr 28;4:e06416.
 
-<span style="color:red">   †</span> co-first author  
-<span style="color:red">   ‡</span> consortium member, data contributor
+<span style="color:red">†</span> co-first author  
+<span style="color:red">‡</span> consortium member, data contributor
 
 ---
 
-## <span style="color:#21436e">Honors and Awards</span>
+## Honors and Awards
 
 Seed Grant Recipient, [Genomics Innovation Hub](https://www.biotech.cornell.edu/core-facilities-brc/facilities/genomics-innovation-hub) - **2020**  
 Distinguished Scholar, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) - **2019**  
