@@ -110,7 +110,9 @@ Note that this file controls other site parameters, too, like `$sidebar-color` a
 
 - [Where are favicon settings and file located?](https://github.com/htr3n/hyde-hyde/issues/94)  
 - [Setting the meta description in Hugo's hyde-hyde theme](https://patrickpeeters.com/2020/12/setting-the-meta-description-in-hugos-hyde-hyde-theme/)  
-- [How to add a contact form to your Hugo website](https://medium.com/getform-all-about/how-to-add-a-contact-form-to-your-hugo-website-84ea79683399)
+- [Add a contact form to your Hugo website](https://medium.com/getform-all-about/how-to-add-a-contact-form-to-your-hugo-website-84ea79683399)
+- [Add GitHub stat cards for users and repositories](https://github.com/anuraghazra/github-readme-stats)
+- [Add a dark mode toggle to your Hugo site](https://yonkov.github.io/post/add-dark-mode-toggle-to-hugo/)
 
 
 <style>

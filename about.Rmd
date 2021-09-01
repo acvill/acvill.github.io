@@ -29,7 +29,13 @@ I love R and I appreciate well-documented bioinformatics tools. When I write a h
 
 #### [**bracken_plot**](https://acvill.shinyapps.io/bracken_plot/) -- a shiny app for taxonomic abundance visualization
 
-As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. Visit the [bracken_plot GitHub repo](https://github.com/acvill/bracken_plot) for a tutorial with example files. 
+<center>
+
+[![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=bracken_plot&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/bracken_plot)
+
+</center>
+
+As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. 
 
 <center>
 
@@ -39,7 +45,13 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kr
 
 #### [**findmotifs.R**](https://github.com/acvill/findmotifs) -- an R script for DNA motif identification in metagenomic bins
 
-To understand the genetic context and biological relevance of DNA motifs, it's often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I've written findmotifs.R -- an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr. A tutorial with example files is available on the [findmotifs GitHub repo](https://github.com/acvill/findmotifs#example).
+<center>
+
+[![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=findmotifs&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/findmotifs)
+
+</center>
+
+To understand the genetic context and biological relevance of DNA motifs, it's often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I've written findmotifs.R -- an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr.
 
 <center>
 
@@ -49,7 +61,7 @@ To understand the genetic context and biological relevance of DNA motifs, it's o
 
 ## Fun Stuff
 
-I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Below are some of my favorite questions I've answered. Come ask more! 
+I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com). Below are some of my favorite questions I've answered. Come ask more! 
 
 - [Will all bacteria become resistant against all antibiotics in the long term?](https://biology.stackexchange.com/questions/90115)
 - [Does direction relative to origin of replication matter on small plasmids?](https://biology.stackexchange.com/questions/100120)
@@ -58,7 +70,11 @@ I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexcha
 - [How is incomplete dominance explained at the molecular level?](https://biology.stackexchange.com/questions/88534)
 - [How are protein species distributed over cell types?](https://biology.stackexchange.com/questions/89937)
 
-<a href="https://stackexchange.com/users/10848131/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="208" height="58" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
+<center>
+
+<a href="https://biology.stackexchange.com/users/52196/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="287" height="80" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
+
+</center>
 
 <style>
 p.caption {

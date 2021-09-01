@@ -21,12 +21,12 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Blogdown site personalization"/>
-<meta name="twitter:description" content="There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements."/>
+<meta name="twitter:description" content="There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the &ldquo;how-to&rdquo; guides. Here, I&rsquo;ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements."/>
 
 <meta property="og:title" content="Blogdown site personalization" />
-<meta property="og:description" content="There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements." />
+<meta property="og:description" content="There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the &ldquo;how-to&rdquo; guides. Here, I&rsquo;ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://acvill.github.io/posts/hugo_mods/" />
+<meta property="og:url" content="https://acvill.github.io/posts/hugo_mods.utf8/" />
 <meta property="article:published_time" content="2021-01-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-01-07T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
 
@@ -178,9 +178,8 @@
     </div>
     
 <div class="copyright">
-  &copy; 2020 - 2021 A.C. Vill
+  &copy; 2020 - 2021 Albert Vill
   
-  <br>
     <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
   
 </div>
@@ -232,16 +231,12 @@
   
   
   <div class="post">
-    
-
-
-<p>There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is <a href="https://bookdown.org/yihui/blogdown/"><em>Creating Websites with R Markdown</em></a> by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the “how-to” guides. Here, I’ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements. For sure, there are better ways to implement the changes I describe, and my mixed use of markdown syntax with HTML can be considered hacky at best. But, for those like me who are unfamiliar with CSS, I hope this is useful.</p>
+    <p>There are many existing blog posts and help pages explaining how to build a Hugo site using blogdown, the best of which is <a href="https://bookdown.org/yihui/blogdown/"><em>Creating Websites with R Markdown</em></a> by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. But, as when learning anything new, I found myself asking questions about Hugo site formatting and functionality that were not answered by the &ldquo;how-to&rdquo; guides. Here, I&rsquo;ve collected links and code snippets addressing questions about how to toggle features and change the appearance of blogdown site elements. For sure, there are better ways to implement the changes I describe, and my mixed use of markdown syntax with HTML can be considered hacky at best. But, for those like me who are unfamiliar with CSS, I hope this is useful.</p>
 <p><strong>Note</strong>: some of the directory structures and file names mentioned herein are specific to the <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde theme</a>, though the edits should be applicable to the analogous files from other Hugo flavors.</p>
-<div id="how-to-scale-images-and-format-image-captions" class="section level3">
-<h3>How to scale images and format image captions</h3>
+<h3 id="how-to-scale-images-and-format-image-captions">How to scale images and format image captions</h3>
 <p>When creating a blogdown post, standard image markdown can be used to insert pictures with captions.</p>
-<pre><code>![Caption text](/path/to/image.png &quot;Alternative text&quot;)</code></pre>
-<p>While simple and functional, I think the aesthetics can be improved. First, by default, images are scaled to 100% of the page width, but I think some flanking whitespace looks nice. RStudio IDE supports <a href="https://bookdown.org/yihui/bookdown/pandoc.html">Pandoc</a> notation, so you can simply include a percent width parameter in brackets after the image. Adding <code>center</code> tags aligns the picture in the center of the page, but newlines between the tags and the image text are needed in order to render the caption.</p>
+<pre><code>![Caption text](/path/to/image.png &quot;Alternative text&quot;)
+</code></pre><p>While simple and functional, I think the aesthetics can be improved. First, by default, images are scaled to 100% of the page width, but I think some flanking whitespace looks nice. RStudio IDE supports <a href="https://bookdown.org/yihui/bookdown/pandoc.html">Pandoc</a> notation, so you can simply include a percent width parameter in brackets after the image. Adding <code>center</code> tags aligns the picture in the center of the page, but newlines between the tags and the image text are needed in order to render the caption.</p>
 <pre><code># This:
 &lt;center&gt;
 
@@ -252,8 +247,8 @@
 # Not this:
 &lt;center&gt;
 ![Caption text](/path/to/image.png &quot;Alternative text&quot;){ width=50% }
-&lt;/center&gt;</code></pre>
-<p>Second, I found the default caption text to be too similar to the text in the post body. To remedy this, I include the <code>style</code> tag with attributes for <code>p.caption</code> in the body of my Rmarkdown posts, specifying the size, color, alignment, and left/right margins of the caption as a percent of page width.</p>
+&lt;/center&gt;
+</code></pre><p>Second, I found the default caption text to be too similar to the text in the post body. To remedy this, I include the <code>style</code> tag with attributes for <code>p.caption</code> in the body of my Rmarkdown posts, specifying the size, color, alignment, and left/right margins of the caption as a percent of page width.</p>
 <pre><code>&lt;style&gt;
 p.caption {
   font-size: 0.9em;
@@ -262,70 +257,51 @@ p.caption {
   margin-right: 5%;
   margin-left: 5%;
 }
-&lt;/style&gt;</code></pre>
-<p>Altogether, these code snippets make for nicely scaled images with captions that stand out from the main text.</p>
+&lt;/style&gt;
+</code></pre><p>Altogether, these code snippets make for nicely scaled images with captions that stand out from the main text.</p>
 <pre><code>&lt;center&gt;
 
 ![So regal. Such panache.](/img/posts/sunny.jpg &quot;His royal majesty, Sunny&quot;){ width=50% }
 
-&lt;/center&gt;</code></pre>
-<center>
-<div class="figure">
-<img src="/img/posts/sunny.jpg" title="His royal majesty, Sunny" style="width:50.0%" alt="" />
-<p class="caption">So regal. Such panache.</p>
-</div>
-</center>
-</div>
-<div id="how-to-add-and-change-icons-for-social-accounts" class="section level3">
-<h3>How to add and change icons for social accounts</h3>
+&lt;/center&gt;
+</code></pre><!-- raw HTML omitted -->
+<p><img src="/img/posts/sunny.jpg" alt="So regal. Such panache." title="His royal majesty, Sunny">{ width=50% }</p>
+<!-- raw HTML omitted -->
+<h3 id="how-to-add-and-change-icons-for-social-accounts">How to add and change icons for social accounts</h3>
 <p>The <code>config.toml</code> file from the hyde-hyde example site includes a preconfigured list of social accounts that can be included in the sidebar, some of which are commented out. Some popular websites are not included in this list; specifically, I wanted to include an icon linking to my Stack Exchange network account. To accomplish this, I edited <code>layouts/partials/sidebar/social.html</code> to include the following:</p>
 <pre><code>{{ with .Site.Params.social.stackexchange }}
-    &lt;a href=&quot;https://biology.stackexchange.com/users/{{.}}&quot; rel=&quot;me&quot;&gt;&lt;i class=&quot;fab fa-stack-exchange fa-lg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    {{ end }}</code></pre>
-<p>Then, I added the <code>stackexchange</code> parameter with my Stack Exchange user ID and name to <code>config.toml</code>:</p>
+	&lt;a href=&quot;https://biology.stackexchange.com/users/{{.}}&quot; rel=&quot;me&quot;&gt;&lt;i class=&quot;fab fa-stack-exchange fa-lg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	{{ end }}
+</code></pre><p>Then, I added the <code>stackexchange</code> parameter with my Stack Exchange user ID and name to <code>config.toml</code>:</p>
 <pre><code>## Social Accounts
 [params.social]
     stackexchange = &quot;52196/acvill&quot;
     linkedin = &quot;albert-vill-a457821a1&quot;
     twitter = &quot;_AlbertVill&quot;
     orcid = &quot;0000-0001-5982-0298&quot;
-    email = &quot;albertcvill@gmail.com&quot;</code></pre>
-<p>Note that the order of icons in the sidebar is determined by the order of sites provided in <code>social.html</code> and not the order of parameters listed in <code>[params.social]</code>. Explicitly, the left-right order of icons in the sidebar corresponds to the top-bottom order of sites in <code>social.html</code>. From my searching, Hugo seems to source its unicode glyphs from <a href="https://fontawesome.com/icons">Font Awesome</a>. This means that you can easily personalize your Hugo site by swapping out the default icon HTML for the HTML provided on each Font awesome icon page. For example, hyde-hyde uses <i class="fas fa-at"></i> to represent email.</p>
-<pre><code>&lt;i class=&quot;fas fa-at&quot;&gt;&lt;/i&gt;</code></pre>
-<p>But this can be swapped for a variety of other icons.</p>
+    email = &quot;albertcvill@gmail.com&quot;
+</code></pre><p>Note that the order of icons in the sidebar is determined by the order of sites provided in <code>social.html</code> and not the order of parameters listed in <code>[params.social]</code>. Explicitly, the left-right order of icons in the sidebar corresponds to the top-bottom order of sites in <code>social.html</code>. From my searching, Hugo seems to source its unicode glyphs from <a href="https://fontawesome.com/icons">Font Awesome</a>. This means that you can easily personalize your Hugo site by swapping out the default icon HTML for the HTML provided on each Font awesome icon page. For example, hyde-hyde uses <!-- raw HTML omitted --><!-- raw HTML omitted --> to represent email.</p>
+<pre><code>&lt;i class=&quot;fas fa-at&quot;&gt;&lt;/i&gt;
+</code></pre><p>But this can be swapped for a variety of other icons.</p>
 <pre><code>&lt;i class=&quot;fab fa-envelope&quot;&gt;&lt;/i&gt;
 &lt;i class=&quot;fab fa-envelope-square&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;fab fa-paper-plane&quot;&gt;&lt;/i&gt;</code></pre>
-<p><i class="fas fa-envelope"></i>
-<i class="fas fa-envelope-square"></i>
-<i class="fas fa-paper-plane"></i></p>
-</div>
-<div id="how-to-change-page-width-sidebar-color-and-other-parameters" class="section level3">
-<h3>How to change page width, sidebar color, and other parameters</h3>
+&lt;i class=&quot;fab fa-paper-plane&quot;&gt;&lt;/i&gt;
+</code></pre><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="how-to-change-page-width-sidebar-color-and-other-parameters">How to change page width, sidebar color, and other parameters</h3>
 <p>When viewed on a desktop, hyde-hyde leaves a lot of white space on the right side of the page. Ryan Cummings describes a simple fix in their <a href="https://blog.ryanwcummings.com/posts/hugo-width-adjustment/">blog</a>. Just navigate to <code>assets/scss/hyde-hyde/_variables.scss</code> and edit the <code>$content-max-width</code> variable.</p>
 <p>Note that this file controls other site parameters, too, like <code>$sidebar-color</code> and the font families used in rendered posts.</p>
-</div>
-<div id="other-helpful-links" class="section level3">
-<h3>Other helpful links</h3>
+<h3 id="other-helpful-links">Other helpful links</h3>
 <ul>
-<li><a href="https://github.com/htr3n/hyde-hyde/issues/94">Where are favicon settings and file located?</a><br />
-</li>
-<li><a href="https://patrickpeeters.com/2020/12/setting-the-meta-description-in-hugos-hyde-hyde-theme/">Setting the meta description in Hugo’s hyde-hyde theme</a><br />
-</li>
+<li><a href="https://github.com/htr3n/hyde-hyde/issues/94">Where are favicon settings and file located?</a></li>
+<li><a href="https://patrickpeeters.com/2020/12/setting-the-meta-description-in-hugos-hyde-hyde-theme/">Setting the meta description in Hugo&rsquo;s hyde-hyde theme</a></li>
 <li><a href="https://medium.com/getform-all-about/how-to-add-a-contact-form-to-your-hugo-website-84ea79683399">Add a contact form to your Hugo website</a></li>
 <li><a href="https://github.com/anuraghazra/github-readme-stats">Add GitHub stat cards for users and repositories</a></li>
 <li><a href="https://yonkov.github.io/post/add-dark-mode-toggle-to-hugo/">Add a dark mode toggle to your Hugo site</a></li>
 </ul>
-<style>
-p.caption {
-  font-size: 0.9em;
-  text-align: center;
-  color: #7f1cad;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-</style>
-</div>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
   </div>
   
