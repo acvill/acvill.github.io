@@ -17,7 +17,7 @@ output: html_document
   <br>
   <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
   <br>
-  <div class="g-recaptcha" data-sitekey="6LdOvcAbAAAAAGm7YF50a3jH0p1fklhno5SJut40"></div>
+  <div class="g-recaptcha" data-sitekey="6LfJMTwcAAAAADTodnfDOhefVv49oalnie2qFV6H"></div>
   <br>
   <button style="font-size:14px; background-color:#21436e; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
 
