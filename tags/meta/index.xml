@@ -6,38 +6,7 @@
     <description>Recent content in meta on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/meta/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Emojify codemap table</title>
-      <link>https://acvill.github.io/posts/emojify_codemap/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://acvill.github.io/posts/emojify_codemap/</guid>
-      <description>
-&lt;script src=&#34;https://acvill.github.io/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://acvill.github.io/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://acvill.github.io/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://acvill.github.io/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://acvill.github.io/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;https://acvill.github.io/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://acvill.github.io/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://acvill.github.io/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://acvill.github.io/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;A lookup table of encodings for Hugo’s emojify function
-</description>
-    </item>
-    
-    <item>
-      <title>Emojify codemap table</title>
-      <link>https://acvill.github.io/posts/emojify_codemap.knit/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://acvill.github.io/posts/emojify_codemap.knit/</guid>
-      <description>&lt;p&gt;A lookup table of encodings for Hugo&amp;rsquo;s emojify function&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blogdown site personalization</title>
       <link>https://acvill.github.io/posts/hugo_mods/</link>
