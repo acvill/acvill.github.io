@@ -1,0 +1,27 @@
+---
+title: "Emojify codemap table"
+author: "Albert Vill"
+date: "01 Sep 2021"
+output: html_document
+tags: ['meta','hugo','blogdown']
+---
+A lookup table of encodings for Hugo's emojify function
+<!--more-->
+
+Hugo's [emojify function](https://gohugo.io/functions/emojify/) is a quick and easy way to add emoji to your static site. However, the [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/) linked at gohugo.io is out of date, and only includes a subset of the emoji available through emojify. Here, I've parsed the most recent [emojify gloang codemap](https://github.com/kyokomi/emoji/blob/master/emoji_codemap.go) (last updated 30 Dec 2020) in order to create a better lookup table for emojify users. 
+
+If you'd prefer, you can access the complete list of encodings as a [text file](/posts/emoji_encodings.txt).
+
+
+```{r, echo=F}
+library(DT)
+
+emojidat <- read.delim("emoji_encodings.txt", sep = "\t",
+                       col.names = c("Emoji","Java_code"))
+
+emojidat$Emojify_code <- paste0(":",gsub(":","\u200B",emojidat$Emoji),":")
+
+datatable(data = emojidat,
+          options = list(pageLength = 50))
+```
+

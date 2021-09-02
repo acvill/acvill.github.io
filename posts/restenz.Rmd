@@ -5,10 +5,8 @@ date: "06 Jan 2021"
 output: html_document
 tags: ['molecular_biology','metagenomics']
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Some thoughts on the use of sequence-biased enzymes for metagenomic proximity ligation, and suggestions for best practices.
+<!--more-->
 
 Restriction enzymes (REs) have been the workhorses of molecular biology for decades.<sup>**1**</sup> Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.<sup>**2,3**</sup> Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin<sup>**4,5**</sup>, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq<sup>**6**</sup> and ATAC-seq.<sup>**7**</sup> Generally, if you want sticky ends to add adapters or labeled nucleotides, REs are the way to go. 
 

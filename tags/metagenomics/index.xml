@@ -13,7 +13,11 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/posts/restenz/</guid>
-      <description>Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1 Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3 Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6 and ATAC-seq.</description>
+      <description>
+
+
+&lt;p&gt;Some thoughts on the use of sequence-biased enzymes for metagenomic proximity ligation, and suggestions for best practices.
+</description>
     </item>
     
   </channel>

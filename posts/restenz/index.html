@@ -21,10 +21,18 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Restriction enzyme sites across bacterial genomes - implications for metagenomics"/>
-<meta name="twitter:description" content="Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1 Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3 Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6 and ATAC-seq."/>
+<meta name="twitter:description" content="
+
+
+Some thoughts on the use of sequence-biased enzymes for metagenomic proximity ligation, and suggestions for best practices.
+"/>
 
 <meta property="og:title" content="Restriction enzyme sites across bacterial genomes - implications for metagenomics" />
-<meta property="og:description" content="Restriction enzymes (REs) have been the workhorses of molecular biology for decades.1 Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.2,3 Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin4,5, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq6 and ATAC-seq." />
+<meta property="og:description" content="
+
+
+Some thoughts on the use of sequence-biased enzymes for metagenomic proximity ligation, and suggestions for best practices.
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://acvill.github.io/posts/restenz/" />
 <meta property="article:published_time" content="2021-01-06T00:00:00+00:00" />
@@ -229,9 +237,7 @@
   
   
   <div class="post">
-    
-
-
+    </p>
 <p>Restriction enzymes (REs) have been the workhorses of molecular biology for decades.<sup><strong>1</strong></sup> Primarily considered tools of cloning, REs have found a place in some next-generation sequencing techniques that require efficient production of defined DNA ends for subsequent modification and ligation. For example, most flavors of genome-wide chromosome conformation capture use one or two REs to fragment DNA before dilute ligation of fixed chromatin complexes.<sup><strong>2,3</strong></sup> Additionally, chromatin accessibility can be inferred by sequencing RE-digested chromatin<sup><strong>4,5</strong></sup>, though such methods are less popular than those which utilize sequence-agnostic enzymes like DNase-seq<sup><strong>6</strong></sup> and ATAC-seq.<sup><strong>7</strong></sup> Generally, if you want sticky ends to add adapters or labeled nucleotides, REs are the way to go.</p>
 <p>In context of metagenomics, RE-based proximity ligation libraries have been of great utility in improving metagenome-assembled genomes<sup><strong>8</strong></sup> and linking plasmids with their bacterial hosts.<sup><strong>9,10</strong></sup> When working with a single organism that has a well-annotated genome, sequence bias can be accounted for by choosing an enzyme that is expected to cut at regular intervals across the genome, based on GC content or the known distribution of RE sites. Applying RE methods to a microbiome presents a problem - how do you choose an appropriate enzyme when there are many different genomes, or when the community composition is unknown?</p>
 <div class="figure">
