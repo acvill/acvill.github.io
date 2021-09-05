@@ -79,5 +79,16 @@ Lincoln Scholar – highest merit-based scholarship awarded
 Research ExperiencePhD Candidate – Lab of Dr. Ilana Brito, Cornell UniversityDesigning and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease - Spring 2017 – present</description>
     </item>
     
+    <item>
+      <title>Projects and Resources</title>
+      <link>https://acvill.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/projects/</guid>
+      <description>bracken_plot – a shiny app for taxonomic abundance visualization
+Click to expand details…
+As a graduate student studying metagenomics, I frequently use Derrick Wood’s Kraken2 software for accurate and lightning-fast classification of short reads. Bracken is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a simple shiny app for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports.</description>
+    </item>
+    
   </channel>
 </rss>

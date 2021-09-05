@@ -25,31 +25,7 @@ The Brito Lab is continuing to innovate in the microbiome mobile gene space with
 
 ## :computer::bar_chart: Side Projects
 
-I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Below are some small projects that were born from my research needs that I've adapted for sharing.
-
-#### [**bracken_plot**](https://acvill.shinyapps.io/bracken_plot/) -- a shiny app for taxonomic abundance visualization
-
-[![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=bracken_plot&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/bracken_plot)
-
-As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. 
-
-<center>
-
-![Example output from the bracken_plot app showing genus-level relative abudance across oral microbiome samples. Don't mind the human read contamination!](/img/about/bracken_barplot.png "Bracken bar plot"){ width=75% }
-
-</center>
-
-#### [**findmotifs.R**](https://github.com/acvill/findmotifs) -- an R script for DNA motif identification in metagenomic bins
-
-[![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=findmotifs&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/findmotifs)
-
-To understand the genetic context and biological relevance of DNA motifs, it's often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I've written findmotifs.R -- an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr.
-
-<center>
-
-![findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.](/img/about/findmotifs2.PNG "command line screenshot of findmotifs in action"){ width=75% }
-
-</center>
+I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Please see [my projects page](https://albertvill.com/projects) for descriptions of tools and resources that I've developed as part of my ongoing research in metagenomics and bacterial genetics.
 
 ## :confetti_ball::partying_face: Fun Stuff
 
