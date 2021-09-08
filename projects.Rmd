@@ -9,7 +9,7 @@ output: html_document
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=bracken_plot&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/bracken_plot)
 
 <details>
-  <summary>Click to expand details...</summary>
+  <summary>Expand details...</summary>
 
 As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. 
 
@@ -25,7 +25,7 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kr
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=findmotifs&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/findmotifs)
 
 <details>
-  <summary>Click to expand details...</summary>
+  <summary>Expand details...</summary>
   
 To understand the genetic context and biological relevance of DNA motifs, it's often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I've written findmotifs.R -- an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr.
 
