@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bioinformatics</title>
+      <link>https://acvill.github.io/tags/bioinformatics/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/tags/bioinformatics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://acvill.github.io/tags/r/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>blogdown</title>
       <link>https://acvill.github.io/tags/blogdown/</link>

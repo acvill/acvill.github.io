@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     
+    
+
+
     <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     <meta charset="utf-8">
@@ -13,18 +16,27 @@
     
     
 
-<title>Tags • Albert Vill</title>
+<title>Parsing GTF files in the tidyverse • Albert Vill</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Parsing GTF files in the tidyverse"/>
+<meta name="twitter:description" content="
 
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://acvill.github.io/tags/" />
-<meta property="og:updated_time" content="2021-11-09T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
+
+An R &#43; tidyverse approach for reading GTF annotations.
+"/>
+
+<meta property="og:title" content="Parsing GTF files in the tidyverse" />
+<meta property="og:description" content="
+
+
+An R &#43; tidyverse approach for reading GTF annotations.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://acvill.github.io/posts/gtf_tidy/" />
+<meta property="article:published_time" content="2021-11-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-09T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
 
 
     
@@ -54,8 +66,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon.png">
     <link rel="shortcut icon" href="/img/favicon-32x32.png">
-    <link rel="alternate" type="application/rss+xml" href="https://acvill.github.io/tags/index.xml" title="Albert Vill" />
-
+    
     
 
     
@@ -197,109 +208,85 @@
 
         <div class="content container">
             
-    <span class="section__title">Tags</span>
-<ul class="posts">
     
+<article>
+  <header>
+    <h1>Parsing GTF files in the tidyverse</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> 9 Nov 2021
+    
+    
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/bioinformatics">bioinformatics</a>
+         
+      
+          <a class="badge badge-tag" href="/tags/r">r</a>
         
-<li>
-  <span class="list__title--small">
-    <a href="/tags/bioinformatics/" >bioinformatics</a>
       
-      <time class="pull-right hidden-tablet">9 Nov 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/r/" >R</a>
-      
-      <time class="pull-right hidden-tablet">9 Nov 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/blogdown/" >blogdown</a>
-      
-      <time class="pull-right hidden-tablet">7 Jan 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/hugo/" >hugo</a>
-      
-      <time class="pull-right hidden-tablet">7 Jan 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/meta/" >meta</a>
-      
-      <time class="pull-right hidden-tablet">7 Jan 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/metagenomics/" >metagenomics</a>
-      
-      <time class="pull-right hidden-tablet">6 Jan 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/molecular_biology/" >molecular_biology</a>
-      
-      <time class="pull-right hidden-tablet">6 Jan 2021</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/plot/" >plot</a>
-      
-      <time class="pull-right hidden-tablet">23 Jul 2015</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/r-markdown/" >R Markdown</a>
-      
-      <time class="pull-right hidden-tablet">23 Jul 2015</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/tags/regression/" >regression</a>
-      
-      <time class="pull-right hidden-tablet">23 Jul 2015</time>
-      
-  </span>
-</li>
-
-
     
-</ul>
+    
+    <br/>
+    
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    </p>
+<p>Like many other people working with sequencing data in R, I rely on different packages to do different things. For reading annotations in GTF and GFF formats, there are two popular packages to get the job done: refGenome and rtracklayer (see <a href="https://davetang.org/muse/2017/08/04/read-gtf-file-r/">Dave Tang’s blog</a> for a description of each). Unfortunately, refGenome has not been updated since 2019 and <a href="https://CRAN.R-project.org/package=refGenome">has since been removed from the CRAN repository</a>. As for rtracklayer, it is updated regularly as part of the Bioconductor suite of tools, though I’ve found <code>import()</code> can be finicky if your annotation file contains unexpected characters in certain places. Moreover, R’s opaque error reporting can make it <a href="https://www.biostars.org/p/488193/#488193">hard to diagnose</a> whether an error is caused by rtracklayer or one of its dependencies.</p>
+<center>
+<p><img src="/img/posts/stringr_dplyr.png" title="stringr logo" style="width:70.0%" /></p>
+</center>
+<p>I love the tidyverse. Though it has a <a href="https://stackoverflow.com/a/61393520/7976890">reputation for instability</a>, I find the consistent grammar and interoperability of its packages make data cleaning a simple and transparent process. And when breaking changes are implemented, the tidyverse’s <a href="https://lifecycle.r-lib.org/articles/stages.html">meticulous lifecycle documentation</a> means that deprecated code is easy to track down and change. So, I sought a tidyverse approach to read genome annotations. Below is my code to read in a GTF file as a tibble using functions from stringr and dplyr.</p>
+<script type="application/javascript" src="https://gist.github.com/acvill/03343034392cff158d2369483ed8935f.js"></script>
+<p>This function properly parses the <code>attribute</code> column for files in which the number and types of attributes are inconsistent between features, as is the case with programs that compile feature annotations from multiple sources like <a href="https://github.com/tseemann/prokka">Torsten Seemann’s prokka</a>. It also handles instances where the <code>attribute</code> field separator (<code>;</code>) is found in quoted attribute strings.</p>
+<p>I would like to credit Stack Overflow user akrun for <a href="https://stackoverflow.com/a/69901344/7976890">providing the regex for attribute string parsing</a>.</p>
+
+  </div>
+  
+
+
+  
+
+  
+    
+
+
+</article>
 
 
         </div>
         
     
+
 <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
 
 
 
