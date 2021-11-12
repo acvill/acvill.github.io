@@ -50,4 +50,4 @@ tidy_gff <- function(x, chroms=NULL,
 }
 ```
 
-For most applications, this is sufficient and fast. However, metagenomic annotations often contain exotic attribute types, as is the case with files output by programs that aggregate features from multiple sources like [Torsten Seemann's prokka](https://github.com/tseemann/prokka). In such analyses, the you may want the full attribute set, and `read_gtf()` is here to help.
+For most applications, this is sufficient and fast. However, metagenomic annotations often contain exotic attribute types, as is the case with files output by programs that aggregate features from multiple sources like [Torsten Seemann's prokka](https://github.com/tseemann/prokka). In such analyses, you may want the full attribute set, and `read_gtf()` is here to help.
