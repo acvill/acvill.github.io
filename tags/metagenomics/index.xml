@@ -6,7 +6,20 @@
     <description>Recent content in metagenomics on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/metagenomics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/metagenomics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parsing GTF files in the tidyverse</title>
+      <link>https://acvill.github.io/posts/gtf_tidy/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/gtf_tidy/</guid>
+      <description>
+
+
+&lt;p&gt;An R + tidyverse approach for reading GTF annotations.
+</description>
+    </item>
+    
     <item>
       <title>Restriction enzyme sites across bacterial genomes - implications for metagenomics</title>
       <link>https://acvill.github.io/posts/restenz/</link>

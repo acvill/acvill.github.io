@@ -228,6 +228,9 @@ An R &#43; tidyverse approach for reading GTF annotations.
           <br/>
            <i class="fas fa-tags"></i>
           
+          <a class="badge badge-tag" href="/tags/metagenomics">metagenomics</a>
+         
+      
           <a class="badge badge-tag" href="/tags/bioinformatics">bioinformatics</a>
          
       
@@ -246,14 +249,38 @@ An R &#43; tidyverse approach for reading GTF annotations.
   
   <div class="post">
     </p>
-<p>Like many other people working with sequencing data in R, I rely on different packages to do different things. For reading annotations in GTF and GFF formats, there are two popular packages to get the job done: refGenome and rtracklayer (see <a href="https://davetang.org/muse/2017/08/04/read-gtf-file-r/">Dave Tang’s blog</a> for a description of each). Unfortunately, refGenome has not been updated since 2019 and <a href="https://CRAN.R-project.org/package=refGenome">has since been removed from the CRAN repository</a>. As for rtracklayer, it is updated regularly as part of the Bioconductor suite of tools, though I’ve found <code>import()</code> can be finicky if your annotation file contains unexpected characters in certain places. Moreover, R’s opaque error reporting can make it <a href="https://www.biostars.org/p/488193/#488193">hard to diagnose</a> whether an error is caused by rtracklayer or one of its dependencies.</p>
+<p>Like many other people working with sequencing data in R, I rely on different packages to do different things. For reading annotations in GTF and GFF formats, there are a few well-regarded choices to get the job done: refGenome and rtracklayer (see <a href="https://davetang.org/muse/2017/08/04/read-gtf-file-r/">Dave Tang’s blog</a> for a description of each). Unfortunately, refGenome has not been updated since 2019 and <a href="https://CRAN.R-project.org/package=refGenome">has since been removed from the CRAN repository</a>. As for rtracklayer, it is updated regularly as part of the Bioconductor suite of tools, though I’ve found <code>import()</code> can be finicky if your annotation file contains unexpected characters in certain places. Moreover, R’s opaque error reporting can make it <a href="https://www.biostars.org/p/488193/#488193">hard to diagnose</a> whether an error is caused by rtracklayer or one of its dependencies.</p>
 <center>
 <p><img src="/img/posts/stringr_dplyr.png" title="stringr logo" style="width:70.0%" /></p>
 </center>
 <p>I love the tidyverse. Though it has a <a href="https://stackoverflow.com/a/61393520/7976890">reputation for instability</a>, I find the consistent grammar and interoperability of its packages make data cleaning a simple and transparent process. And when breaking changes are implemented, the tidyverse’s <a href="https://lifecycle.r-lib.org/articles/stages.html">meticulous lifecycle documentation</a> means that deprecated code is easy to track down and change. So, I sought a tidyverse approach to read genome annotations. Below is my code to read in a GTF file as a tibble using functions from stringr and dplyr.</p>
 <script type="application/javascript" src="https://gist.github.com/acvill/03343034392cff158d2369483ed8935f.js"></script>
-<p>This function properly parses the <code>attribute</code> column for files in which the number and types of attributes are inconsistent between features, as is the case with programs that compile feature annotations from multiple sources like <a href="https://github.com/tseemann/prokka">Torsten Seemann’s prokka</a>. It also handles instances where the <code>attribute</code> field separator (<code>;</code>) is found in quoted attribute strings.</p>
 <p>I would like to credit Stack Overflow user akrun for <a href="https://stackoverflow.com/a/69901344/7976890">providing the regex for attribute string parsing</a>.</p>
+<p>This above function correctly parses the <code>attribute</code> column for files in which the number and types of attributes are inconsistent between features. It also handles instances where the attribute field separator (<code>;</code>) is found in quoted attribute strings. Compare this to <code>tidy_gff()</code> from <a href="https://rdrr.io/github/vsbuffalo/annotatr/man/tidy_gff.html">Vince Buffalo’s annotatr package</a>, which parses GFF files using a similar tidy scheme. Digging into the <a href="https://rdrr.io/github/vsbuffalo/annotatr/src/R/annotatr.r">source code</a>, however, we see that the function only extracts a fixed subset of attribute types: <code>ID</code>, <code>Parent</code>, and <code>parent_type</code>.</p>
+<pre class="r"><code>extract_attr &lt;- function(x, key)  {
+  has_key &lt;- regexpr(key, x)
+  value &lt;- gsub(sprintf(&#39;.*%s=([^;]+).*&#39;, key), &#39;\\1&#39;, x)
+  value[has_key == -1] &lt;- NA
+  out &lt;- strsplit(value, &#39;,&#39;)
+  multi_value &lt;- any(sapply(out, length) &gt; 1)
+  if (!multi_value) return(unlist(out))
+  out
+}
+
+tidy_gff &lt;- function(x, chroms=NULL,
+                     features=c(&#39;five_prime_UTR&#39;, &#39;three_prime_UTR&#39;, 
+                                &#39;exon&#39;, &#39;intron&#39;, &#39;gene&#39;, &#39;CDS&#39;)) {
+  out &lt;- dplyr::select(dplyr::mutate(dplyr::filter(x, feature %in% features), 
+                id=extract_attr(attr, &#39;ID&#39;),
+                parent=extract_attr(attr, &#39;Parent&#39;),
+                parent_type=extract_attr(attr, &#39;parent_type&#39;)),
+        chrom, start, end, strand, feature, id, parent, parent_type)
+  if (!is.null(chroms)) {
+    out[out$chrom %in% chroms, ]
+  }
+  out
+}</code></pre>
+<p>For most applications, this is sufficient and fast. However, metagenomic annotations often contain exotic attribute types, as is the case with files output by programs that aggregate features from multiple sources like <a href="https://github.com/tseemann/prokka">Torsten Seemann’s prokka</a>. In such analyses, the you may want the full attribute set, and <code>read_gtf()</code> is here to help.</p>
 
   </div>
   
