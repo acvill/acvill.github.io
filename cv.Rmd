@@ -5,14 +5,14 @@ date: ""
 output: html_document
 ---
 
-Last updated 14 August 2021  
-[**PDF version**](/AVill_CV_14Aug2021.pdf)
+Last updated 25 January 2022  
+[**PDF version here**](/AVill_CV_25Jan2022.pdf)
 
 ---
 
 ## Education
 
-#### Bachelor of Science, *Magna Cum Laude*, Gettysburg College
+#### Bachelor of Science, *Magna Cum Laude* — Gettysburg College
 Biochemistry and Molecular Biology major, 3.70 GPA  
 Lincoln Scholar – highest merit-based scholarship awarded
 
@@ -20,19 +20,22 @@ Lincoln Scholar – highest merit-based scholarship awarded
 
 ## Research Experience
 
-#### PhD Candidate – Lab of Dr. Ilana Brito, Cornell University
-Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease - **Spring 2017 – present**  
+#### PhD Candidate — Lab of Dr. Ilana Brito, Cornell University
+Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease — **Spring 2017 – present**  
 
-#### HHMI Summer Research Fellow – Gettysburg College
-Characterizing soil bacteriophages by host range screens and comparative genomics - **Summers 2014 & 2015**
+#### HHMI Summer Research Fellow — Gettysburg College
+Characterizing soil bacteriophages by host range screens and comparative genomics — **Summers 2014 & 2015**
 
 ---
 
 ## Publications
 
+**Vill AC**, Rice EJ, De Vlaminck I, Danko CG, Brito IL. Run-on sequencing
+reveals transcriptional dynamics within the human microbiome. **Submitted January 2022**
+
 Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nat Commun*. **2020** Sep 1;11(1):4379.
 
-Delesalle VA, **Vill AC**, Tomko BE, Boas K, Burton EA, Guffey AA, Loney R, Simões MS, Tanke NT, Krukonis GP. Comparative genomics of fourteen novel Siphoviridae phages of Bacillus subtilis, including three phages closely related to SPP1. **In preparation**.
+Delesalle VA, **Vill AC**, Tomko BE, Boas K, Burton EA, Guffey AA, Loney R, Simões MS, Tanke NT, Krukonis GP. Comparative genomics of fourteen novel Siphoviridae phages of Bacillus subtilis, including three phages closely related to SPP1. **In preparation**
 
 Delesalle VA, Tanke NT, **Vill AC**, Krukonis GP. [Testing hypotheses for the presence of tRNA genes in mycobacteriophage genomes.](https://doi.org/10.1080/21597081.2016.1219441) *Bacteriophage*. **2016** Aug 5;6(3):e1219441.
 
@@ -43,10 +46,29 @@ Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, H
 
 ---
 
+## Presentations
+
+**Poster** — The Human Microbiome: Ecology and Evolution Symposium  
+*Run-on sequencing enables nascent metatranscriptomics of the human microbiome*. **2022** (<span style="color:red">canceled</span>) 
+
+**Poster** — Lake Arrowhead Microbial Genomics Meeting  
+*Bacterial nascent transcriptomics with precision run-on sequencing*. **2021** (<span style="color:red">canceled</span>)  
+
+**Poster** — Biomedical Engineering Society Annual Meeting  
+*Monitoring the Transfer of Antibiotic Resistance Genes in Patients with Neutropenia using Bacterial Hi-C*. **2019**
+
+---
+
 ## Honors and Awards
 
-Seed Grant Recipient, [Genomics Innovation Hub](https://www.biotech.cornell.edu/core-facilities-brc/facilities/genomics-innovation-hub) - **2020**  
-Distinguished Scholar, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) - **2019**  
-Honorable Mention, NSF Graduate Research Fellowship - **2018**  
-Herzog Teaching Fellow, Gettysburg College - **2015**  
-HHMI Summer Research Fellow, Gettysburg College - **2014 & 2015**
+Travel Award Recipient, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) — **2022**  
+
+Seed Grant Recipient, [Genomics Innovation Hub](https://www.biotech.cornell.edu/core-facilities-brc/facilities/genomics-innovation-hub) — **2020**  
+
+Distinguished Scholar, [Cornell Center for Vertebrate Genomics](https://cvg.cornell.edu/scholars-past.php) — **2019**  
+
+Honorable Mention, NSF Graduate Research Fellowship — **2018**  
+
+Herzog Teaching Fellow, Gettysburg College — **2015**  
+
+HHMI Summer Research Fellow, Gettysburg College — **2014 & 2015**
