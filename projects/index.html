@@ -21,13 +21,11 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Projects and Resources"/>
-<meta name="twitter:description" content="bracken_plot – a shiny app for taxonomic abundance visualization
-Expand details…
+<meta name="twitter:description" content="Expand details…
 As a graduate student studying metagenomics, I frequently use Derrick Wood’s Kraken2 software for accurate and lightning-fast classification of short reads. Bracken is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a simple shiny app for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports."/>
 
 <meta property="og:title" content="Projects and Resources" />
-<meta property="og:description" content="bracken_plot – a shiny app for taxonomic abundance visualization
-Expand details…
+<meta property="og:description" content="Expand details…
 As a graduate student studying metagenomics, I frequently use Derrick Wood’s Kraken2 software for accurate and lightning-fast classification of short reads. Bracken is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a simple shiny app for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://acvill.github.io/projects/" />
@@ -86,7 +84,7 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood’s K
         
         
         <div class="author-image">
-          <img src="https://acvill.github.io/img/about/july2021_cropped1.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+          <img src="https://acvill.github.io/img/about/july2021_cropped1.png" alt="Author Image" class="img--circle img--headshot element--center">
         </div>
         
       
@@ -228,8 +226,6 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood’s K
     
 
 
-<div id="bracken_plot-a-shiny-app-for-taxonomic-abundance-visualization" class="section level4">
-<h4><a href="https://acvill.shinyapps.io/bracken_plot/"><strong>bracken_plot</strong></a> – a shiny app for taxonomic abundance visualization</h4>
 <p><a href="https://github.com/acvill/bracken_plot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=acvill&amp;repo=bracken_plot&amp;bg_color=21436e&amp;text_color=ededed&amp;title_color=30ff53&amp;hide_border=true&amp;icon_color=ededed" /></a></p>
 <details>
 <p><summary>Expand details…</summary></p>
@@ -241,16 +237,28 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood’s K
 </div>
 </center>
 </details>
-</div>
-<div id="findmotifs.r-an-r-script-for-dna-motif-identification-in-metagenomic-bins" class="section level4">
-<h4><a href="https://github.com/acvill/findmotifs"><strong>findmotifs.R</strong></a> – an R script for DNA motif identification in metagenomic bins</h4>
-<p><a href="https://github.com/acvill/findmotifs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=acvill&amp;repo=findmotifs&amp;bg_color=21436e&amp;text_color=ededed&amp;title_color=30ff53&amp;hide_border=true&amp;icon_color=ededed" /></a></p>
+<hr />
+<p><a href="https://github.com/acvill/nodeSeqs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=acvill&amp;repo=nodeSeqs&amp;bg_color=21436e&amp;text_color=ededed&amp;title_color=30ff53&amp;hide_border=true&amp;icon_color=ededed" /></a></p>
 <details>
 <p><summary>Expand details…</summary></p>
-<p>To understand the genetic context and biological relevance of DNA motifs, it’s often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I’ve written findmotifs.R – an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findmotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr.</p>
+<p><a href="https://dx.doi.org/10.1101%2Fgr.213959.116">metaSPAdes</a> is a popular tool for assembling short reads from microbiomes. My simplified understanding of short-read de Bruijn graph assemblers is that they fail where ambiguous paths cannot be resolved. While it can be said that these points of failure may be due to certain <strong>structural</strong> features of the underlying sequences – long repeats or conserved sequences found at multiple loci – I am interested in the <strong>functional</strong> classification of sequences that occur at nodes on assembly graphs. Put another way, what kinds of genes are poorly represented in metagenomes because they are poorly assembled? From first principles, you might expect pieces of mobile elements like transposases and integrases to be on such a list of genes, since they are often flanked by repeated sequences and present in many copies across different genomic contexts. However, I wanted to take an empirical approach.</p>
+<p>nodeSeqs.sh takes in a <a href="http://gfa-spec.github.io/GFA-spec/GFA1.html"><strong>G</strong>raphical <strong>F</strong>ragment <strong>A</strong>ssembly file</a> and outputs sequences proximal to high-degree nodes. In the language of GFA, this script looks for <em>segments</em> that have a large number of <em>links</em>, and then filters those segments by <em>k</em>-mer coverage to preclude hits that are poorly assembled due to low coverage. The resulting fasta can then be fed into your favorite sequence alignment software.</p>
 <center>
 <div class="figure">
-<img src="/img/about/findmotifs2.PNG" title="command line screenshot of findmotifs in action" style="width:75.0%" alt="" />
+<img src="/img/about/bandage_sub.svg" title="Bandage Graph" style="width:75.0%" alt="" />
+<p class="caption">A partial Bandage graph for a plasmidome assembly shows segments connected by links</p>
+</div>
+</center>
+<p><a href="https://bioinformatics.stackexchange.com/questions/18476/">See my related post on Bioinformatics Stack Exchange.</a></p>
+</details>
+<hr />
+<p><a href="https://github.com/acvill/findMotifs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=acvill&amp;repo=findMotifs&amp;bg_color=21436e&amp;text_color=ededed&amp;title_color=30ff53&amp;hide_border=true&amp;icon_color=ededed" /></a></p>
+<details>
+<p><summary>Expand details…</summary></p>
+<p>To understand the genetic context and biological relevance of DNA motifs, it’s often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I’ve written findMotifs.R – an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findMotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr.</p>
+<center>
+<div class="figure">
+<img src="/img/about/findmotifs2.PNG" title="command line screenshot of findMotifs in action" style="width:75.0%" alt="" />
 <p class="caption">findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.</p>
 </div>
 </center>
@@ -264,15 +272,16 @@ p.caption {
   margin-left: 10%;
 }
 details > summary {
-  padding: 2px;
-  background-color: #e0e0e0;
+  font-size: 0.9em;
+  padding: 0px;
+  background-color: #FFFFFF;
   border: none;
-  box-shadow: 1px 1px 2px #bbbbbb;
+  box-shadow: 0px 0px 0px #bbbbbb;
   cursor: pointer;
-  margin-right: 50%;
+  margin-left: 10%;
+  color: #21436e;
 }
 </style>
-</div>
 
   </div>
   
