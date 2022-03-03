@@ -18,8 +18,6 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kr
 </center>
 </details>
 
----
-
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=nodeSeqs&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/nodeSeqs)
 
 <details>
@@ -38,8 +36,6 @@ nodeSeqs.sh takes in a [**G**raphical **F**ragment **A**ssembly file](http://gfa
 [See my related post on Bioinformatics Stack Exchange.](https://bioinformatics.stackexchange.com/questions/18476/)
 
 </details>
-
----
 
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=findMotifs&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/findMotifs)
 
@@ -64,13 +60,13 @@ p.caption {
   margin-left: 10%;
 }
 details > summary {
-  font-size: 0.9em;
+  font-size: 1.1em;
   padding: 0px;
   background-color: #FFFFFF;
   border: none;
   box-shadow: 0px 0px 0px #bbbbbb;
   cursor: pointer;
-  margin-left: 10%;
+  margin-left: 5%;
   color: #21436e;
 }
 </style>
