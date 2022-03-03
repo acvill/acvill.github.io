@@ -7,7 +7,7 @@ output: html_document
 
 <center>
 
-![](/img/about/waterfall2.jpg)
+![A waterfall in Connecticut Hill Wildlife Area, Newfield, NY](/img/about/waterfall2.jpg)
 
 </center>
 
@@ -27,11 +27,11 @@ In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited for the publication of my first paper as a PhD student in the Brito Lab <a href="https://twitter.com/ilanabrito123?ref_src=twsrc%5Etfw">@ilanabrito123</a> <a href="https://twitter.com/CornellBME?ref_src=twsrc%5Etfw">@CornellBME</a> <a href="https://twitter.com/NatureComms?ref_src=twsrc%5Etfw">@NatureComms</a>: &quot;Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C&quot; <a href="https://t.co/4ZpBtGDA8m">https://t.co/4ZpBtGDA8m</a><br><br>1/10</p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1300856406787207171?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://elifesciences.org/articles/66834). My current projects involve improvements to metagenomic Hi-C and forays into microbiome metatranscriptomics. 
+The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://doi.org/10.7554/eLife.66834) and [GCN models for HGT prediction](https://doi.org/10.1126/sciadv.abj5056). My current projects involve improvements to metagenomic Hi-C and forays into microbiome metatranscriptomics. 
 
 ## :computer::bar_chart: Side Projects
 
-I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Please see [my projects page](https://albertvill.com/projects) for descriptions of tools and resources that I've developed as part of my ongoing research in metagenomics and bacterial genetics.
+I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Please see [my code & resources page](https://albertvill.com/projects) for descriptions of tools and scripts that I've developed as part of my ongoing research in metagenomics and bacterial genetics.
 
 ## :confetti_ball::partying_face: Fun Stuff
 
@@ -39,20 +39,21 @@ I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexcha
 
 <a href="https://biology.stackexchange.com/users/52196/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="287" height="80" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
 
+- [What are the limitations of 16S rRNA sequencing?](https://biology.stackexchange.com/a/104658/52196)
 - [Does direction relative to origin of replication matter on small plasmids?](https://biology.stackexchange.com/a/100124/52196)
 - [Which proteins are part of the most different protein complexes?](https://biology.stackexchange.com/a/92550/52196)
 - [What fraction of bacterial proteins are membrane bound?](https://biology.stackexchange.com/a/98437/52196)
-- [What are the limitations of 16S rRNA sequencing?](https://biology.stackexchange.com/a/104658/52196)
-- [How are protein species distributed over cell types?](https://biology.stackexchange.com/a/90572/52196)
+- [What are the reasons for using oligo-dT instead of oligo-U to isolate mRNAs?](https://biology.stackexchange.com/a/101635/52196)
 - [Will all bacteria become resistant against all antibiotics in the long term?](https://biology.stackexchange.com/a/90122/52196)
+- [What are the considerations for studying population genetics of bacterial pan-genomes?](https://biology.stackexchange.com/a/97169/52196)
 
 <style>
 p.caption {
   font-size: 0.9em;
   text-align: center;
   color: #7f1cad;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 </style>
 

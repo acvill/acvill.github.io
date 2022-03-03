@@ -20,7 +20,7 @@ output: html_document
   <div class="g-recaptcha" data-sitekey="6LfJMTwcAAAAADTodnfDOhefVv49oalnie2qFV6H"></div>
   <br>
   <button style="font-size:14px; background-color:#21436e; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
-
   
-
+  
+  
 </form>

@@ -26,9 +26,9 @@
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/about/</guid>
-      <description>🍕🧫 BackgroundI am from New Jersey. New Yorkers may think they have better bagels and pizza, but they’re wrong.
-I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and molecular biology. As a first-generation college student, I got my initial exposure to scientific research in the PhagesRock lab under the mentorship of professors Véronique Delesalle and Greg Krukonis.
-Currently, I am a PhD candidate in the Brito Lab at Cornell University in the field of Genetics, Genomics &amp;amp; Development.</description>
+      <description>A waterfall in Connecticut Hill Wildlife Area, Newfield, NY
+🍕🧫 BackgroundI am from New Jersey. New Yorkers may think they have better bagels and pizza, but they’re wrong.
+I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and molecular biology. As a first-generation college student, I got my initial exposure to scientific research in the PhagesRock lab under the mentorship of professors Véronique Delesalle and Greg Krukonis.</description>
     </item>
     
     <item>
@@ -69,6 +69,16 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
+      <title>Code &amp; Resources</title>
+      <link>https://acvill.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/projects/</guid>
+      <description>Expand details…
+As a graduate student studying metagenomics, I frequently use Derrick Wood’s Kraken2 software for accurate and lightning-fast classification of short reads. Bracken is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a simple shiny app for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports.</description>
+    </item>
+    
+    <item>
       <title>Contact Me</title>
       <link>https://acvill.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -90,16 +100,6 @@ PDF version here
 EducationBachelor of Science, Magna Cum Laude — Gettysburg CollegeBiochemistry and Molecular Biology major, 3.70 GPA
 Lincoln Scholar – highest merit-based scholarship awarded
 Research ExperiencePhD Candidate — Lab of Dr. Ilana Brito, Cornell UniversityDesigning and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease — Spring 2017 – present</description>
-    </item>
-    
-    <item>
-      <title>Projects and Resources</title>
-      <link>https://acvill.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://acvill.github.io/projects/</guid>
-      <description>Expand details…
-As a graduate student studying metagenomics, I frequently use Derrick Wood’s Kraken2 software for accurate and lightning-fast classification of short reads. Bracken is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a simple shiny app for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports.</description>
     </item>
     
   </channel>

@@ -1,10 +1,9 @@
 ---
-title: "Projects and Resources"
+title: "Code & Resources"
 author: "Albert Vill"
 date: ""
 output: html_document
 ---
-
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=bracken_plot&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/bracken_plot)
 
 <details>
