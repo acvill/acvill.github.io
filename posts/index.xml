@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lost at the crossroads: genes at the nodes of short-read assembly graphs</title>
+      <link>https://acvill.github.io/posts/nodeseqs_oral/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/nodeseqs_oral/</guid>
+      <description>
+
+
+&lt;p&gt;A brief functional analysis of the sequence content of high-degree segments in metaSPAdes graphs.
+</description>
+    </item>
+    
     <item>
       <title>Parsing GTF files in the tidyverse</title>
       <link>https://acvill.github.io/posts/gtf_tidy/</link>

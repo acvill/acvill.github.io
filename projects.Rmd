@@ -68,6 +68,7 @@ details > summary {
   cursor: pointer;
   margin-left: 5%;
   color: #21436e;
+  border-radius: 5px;
 }
 </style>
 
