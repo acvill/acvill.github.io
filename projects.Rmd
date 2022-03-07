@@ -23,18 +23,15 @@ As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kr
 <details>
   <summary>Expand details...</summary>
 
-[metaSPAdes](https://dx.doi.org/10.1101%2Fgr.213959.116) is a popular tool for assembling short reads from microbiomes. My simplified understanding of short-read de Bruijn graph assemblers is that they fail where ambiguous paths cannot be resolved. While it can be said that these points of failure may be due to certain **structural** features of the underlying sequences -- long repeats or conserved sequences found at multiple loci -- I am interested in the **functional** classification of sequences that occur at nodes on assembly graphs. Put another way, what kinds of genes are poorly represented in metagenomes because they are poorly assembled? From first principles, you might expect pieces of mobile elements like transposases and integrases to be on such a list of genes, since they are often flanked by repeated sequences and present in many copies across different genomic contexts. However, I wanted to take an empirical approach.
+`nodeSeqs.sh` takes in a [**G**raphical **F**ragment **A**ssembly file](http://gfa-spec.github.io/GFA-spec/GFA1.html) and outputs sequences proximal to high-degree nodes. In the language of GFA, this script looks for *segments* that have a large number of *links*, and then filters those segments by *k*-mer coverage to preclude hits that are poorly assembled due to low coverage. The resulting .fasta can then be fed into your favorite sequence alignment software.  
 
-nodeSeqs.sh takes in a [**G**raphical **F**ragment **A**ssembly file](http://gfa-spec.github.io/GFA-spec/GFA1.html) and outputs sequences proximal to high-degree nodes. In the language of GFA, this script looks for *segments* that have a large number of *links*, and then filters those segments by *k*-mer coverage to preclude hits that are poorly assembled due to low coverage. The resulting fasta can then be fed into your favorite sequence alignment software.  
+For an example application of this script, please see my blog post: [***Lost at the crossroads: genes at the nodes of short-read assembly graphs***](https://albertvill.com/posts/nodeseqs_oral/).
 
 <center>
 
-![A partial Bandage graph for a plasmidome assembly shows segments connected by links](/img/about/bandage_sub.svg "Bandage Graph"){ width=75% }
+![A partial Bandage graph for a plasmidome assembly shows segments connected by links](/img/about/bandage_sub.svg "Bandage Graph"){ width=90% }
 
 </center>
-
-[See my related post on Bioinformatics Stack Exchange.](https://bioinformatics.stackexchange.com/questions/18476/)
-
 </details>
 
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=findMotifs&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/findMotifs)
@@ -46,7 +43,7 @@ To understand the genetic context and biological relevance of DNA motifs, it's o
 
 <center>
 
-![findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.](/img/about/findmotifs2.PNG "command line screenshot of findMotifs in action"){ width=75% }
+![findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.](/img/about/findmotifs2.PNG "command line screenshot of findMotifs in action"){ width=90% }
 
 </center>
 </details>
