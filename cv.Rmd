@@ -5,15 +5,19 @@ date: ""
 output: html_document
 ---
 
-Last updated 7 March 2022  
+Last updated 2 May 2022  
 [**PDF version here**](/AVill_CV_7March2022.pdf)
 
 <details>
   <summary>Education</summary>
 
-<h4>Bachelor of Science, *Magna Cum Laude* — Gettysburg College</h4>
-Biochemistry and Molecular Biology major, 3.70 GPA  
+<h4>Bachelor of Science — Gettysburg College, 2016</h4>
+Biochemistry and Molecular Biology major, *magna cum laude*  
 Lincoln Scholar – highest merit-based scholarship awarded
+
+<h4>Doctor of Philosophy — Cornell University, 2022</h4>
+Department of Molecular Biology and Genetics  
+Field of Genetics, Genomics & Development
 
 </details>
 
@@ -21,7 +25,7 @@ Lincoln Scholar – highest merit-based scholarship awarded
   <summary>Research Experience</summary>
 
 <h4>PhD Candidate — Lab of Dr. Ilana Brito, Cornell University</h4>
-Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease — **Spring 2017 – present**  
+Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease — **May 2017 – May 2022**  
 
 <h4>HHMI Summer Research Fellow — Gettysburg College</h4>
 Characterizing soil bacteriophages by host range screens and comparative genomics — **Summers 2014 & 2015**
@@ -31,8 +35,8 @@ Characterizing soil bacteriophages by host range screens and comparative genomic
 <details>
   <summary>Publications</summary>
 
-**Vill AC**, Rice EJ, De Vlaminck I, Danko CG, Brito IL. Run-on sequencing
-reveals transcriptional dynamics within the human microbiome. **In Review** at *Nature Microbiology*
+**Vill AC**, Rice EJ, De Vlaminck I, Danko CG, Brito IL. [Run-on sequencing
+reveals transcriptional dynamics within the human microbiome](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1). **Out for Review**
 
 Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nature Communications*. **2020** Sep 1;11(1):4379.
 

@@ -1,7 +1,7 @@
 ---
 title: "About me"
 author: "Albert Vill"
-date: "26 Oct 2021"
+date: "2 May 2022"
 output: html_document
 ---
 
@@ -17,17 +17,23 @@ I am from New Jersey. New Yorkers may think they have better bagels and pizza, b
 
 I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and molecular biology. As a first-generation college student, I got my initial exposure to scientific research in the [PhagesRock lab](https://xsigsummer.wordpress.com/?s=phage) under the mentorship of professors Véronique Delesalle and Greg Krukonis. 
 
-Currently, I am a PhD candidate in the [Brito Lab](https://www.britolab.org) at Cornell University in the field of Genetics, Genomics & Development. My graduate work involves the application of different sequencing techniques to understand the movement of mobile genetic elements in the human gut microbiome.  
+After undergrad, I enrolled at Cornell University as a graduate student in the field of Genetics, Genomics & Development, and shortly thereafter joined [the Brito Lab](https://www.britolab.org) in the Meinig School of Biomedical Engineering. My graduate work involved the application of different sequencing techniques to understand the DNA and RNA content of the human gut microbiome.
+
+I defended my thesis in April 2022, titled *Metagenomic Methods to Investigate Mobile Element Context and Nascent Transcription in the Human Gut Microbiome*.
 
 ## :dna::poop: Research 
 
-I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based NGS analysis tools. 
+I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based sequencing analysis tools. 
 
 In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.com/) on the use of proximity ligation sequencing (commonly called Hi-C) to resolve mobile element carriage in the gut microbiomes of cancer patients. We found that Hi-C could detect the putative transfer of multi-drug resistance genes between commensal microbes and pathogens within individual patients through time. You can read more about it in Ilana's [*Behind the Paper*](https://go.nature.com/2FJPxqX) highlight or in my Twitter thread:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited for the publication of my first paper as a PhD student in the Brito Lab <a href="https://twitter.com/ilanabrito123?ref_src=twsrc%5Etfw">@ilanabrito123</a> <a href="https://twitter.com/CornellBME?ref_src=twsrc%5Etfw">@CornellBME</a> <a href="https://twitter.com/NatureComms?ref_src=twsrc%5Etfw">@NatureComms</a>: &quot;Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C&quot; <a href="https://t.co/4ZpBtGDA8m">https://t.co/4ZpBtGDA8m</a><br><br>1/10</p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1300856406787207171?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://doi.org/10.7554/eLife.66834) and [GCN models for HGT prediction](https://doi.org/10.1126/sciadv.abj5056). My current projects involve improvements to metagenomic Hi-C and forays into microbiome metatranscriptomics. 
+In 2022, I wrote a manuscript on the application of [precision run-on sequencing](https://doi.org/10.1038/nprot.2016.086) to assess nascent transcription in bacteria. When applied to human stool samples, PRO-seq captures transcription at metagenomic loci that are co-transcriptionally processed, including tRNAs and CRISPR arrays. The manuscript is available as a [preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1).
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My favorite result: PRO-seq captures active transcription across <a href="https://twitter.com/hashtag/CRISPR?src=hash&amp;ref_src=twsrc%5Etfw">#CRISPR</a> arrays, and patterns suggest that endonuclease processing of crRNAs is concurrent with pre-crRNA transcription <a href="https://t.co/vS1tbBI94x">pic.twitter.com/vS1tbBI94x</a></p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1519751344273465344?ref_src=twsrc%5Etfw">April 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://doi.org/10.7554/eLife.66834) and [GCN models for HGT prediction](https://doi.org/10.1126/sciadv.abj5056). 
 
 ## :computer::bar_chart: Side Projects
 
