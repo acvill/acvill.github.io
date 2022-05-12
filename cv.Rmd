@@ -5,19 +5,19 @@ date: ""
 output: html_document
 ---
 
-Last updated 2 May 2022  
-[**PDF version here**](/AVill_CV_7March2022.pdf)
+Last updated 12 May 2022  
+[**PDF version here**](/AVill_CV_12May2022.pdf)
 
 <details>
   <summary>Education</summary>
 
-<h4>Bachelor of Science — Gettysburg College, 2016</h4>
-Biochemistry and Molecular Biology major, *magna cum laude*  
-Lincoln Scholar – highest merit-based scholarship awarded
-
 <h4>Doctor of Philosophy — Cornell University, 2022</h4>
 Department of Molecular Biology and Genetics  
 Field of Genetics, Genomics & Development
+
+<h4>Bachelor of Science — Gettysburg College, 2016</h4>
+Biochemistry and Molecular Biology major, *magna cum laude*  
+Lincoln Scholar – highest merit-based scholarship awarded
 
 </details>
 
