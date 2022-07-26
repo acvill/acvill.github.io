@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "print.css",
-	"sourceRoot": "C:/Users/Albert Vill/Dropbox/Github/blogdown_source",
+	"sourceRoot": "C:/Users/acvill/Dropbox/Github/blogdown_source",
 	"sources": [
 		"themes/hyde-hyde/assets/scss/print.scss",
 		"themes/hyde-hyde/assets/scss/hyde-hyde/_variables.scss",
