@@ -87,8 +87,7 @@ I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and mole
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/projects/</guid>
-      <description>Expand details…
-As a graduate student studying metagenomics, I frequently use Derrick Wood’s Kraken2 software for accurate and lightning-fast classification of short reads. Bracken is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a simple shiny app for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports.</description>
+      <description>Expand details…CRISPR-Cas systems are ubiquitous in environmental microbes and employ mechanistically diverse enzymes. At the heart of CRISPR systems are the arrays of spacers and repeats that serve as the basis for acquired immunity in bacteria and archaea. minCED (Mining CRISPRs in Environmental Datasets) is a program used by prokka and other pipelines for the annotation of CRISPRs in metagenomic assemblies. However, manually parsing the output of minCED for interesting CRISPRs is tedious, and comparing CRISPRs across samples is difficult because of differences in array assembly and orientation.</description>
     </item>
     
     <item>

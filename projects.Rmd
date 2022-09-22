@@ -4,6 +4,20 @@ author: "Albert Vill"
 date: ""
 output: html_document
 ---
+[![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=CRISPRviewR&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/CRISPRviewR)
+
+<details>
+  <summary>Expand details...</summary>
+
+CRISPR-Cas systems are ubiquitous in environmental microbes and employ mechanistically diverse enzymes. At the heart of CRISPR systems are the arrays of spacers and repeats that serve as the basis for acquired immunity in bacteria and archaea. [minCED](https://github.com/ctSkennerton/minced) (**Min**ing **C**RISPRs in **E**nvironmental **D**atasets) is a program used by [prokka](https://github.com/tseemann/prokka) and other pipelines for the annotation of CRISPRs in metagenomic assemblies. However, manually parsing the output of minCED for interesting CRISPRs is tedious, and comparing CRISPRs across samples is difficult because of differences in array assembly and orientation. CRISPRviewR attempts to address this issue by associating CRISPR arrays by shared consensus repeat sequences, permitting clustering and visualization of spacers between metagenomic assemblies. Check out the [CRISPRviewR vignette](https://albertvill.com/CRISPRviewR-vignette.html) for use cases and example plots.
+
+<center>
+
+![Example output from CRISPRviewR](/img/about/CRISPR23_oralmicrobiomes_numbers_bgwhite.svg "CRISPR arrays"){ width=90% }
+
+</center>
+</details>
+
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=bracken_plot&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/bracken_plot)
 
 <details>
