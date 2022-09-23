@@ -5,15 +5,17 @@ date: ""
 output: html_document
 ---
 
-Last updated 12 May 2022  
-[**PDF version here**](/AVill_CV_12May2022.pdf)
+Last updated 23 Sep. 2022  
+[**PDF version here**](/AVill_CV_23Sep2022.pdf)
 
 <details>
   <summary>Education</summary>
 
 <h4>Doctor of Philosophy — Cornell University, 2022</h4>
 Department of Molecular Biology and Genetics  
-Field of Genetics, Genomics & Development
+Field of Genetics, Genomics & Development  
+**Thesis**: [Metagenomic Methods to Investigate Mobile Element Context and Nascent Transcription in the Human Gut Microbiome](http://doi.org/10.7298/z22k-qt36)
+
 
 <h4>Bachelor of Science — Gettysburg College, 2016</h4>
 Biochemistry and Molecular Biology major, *magna cum laude*  
@@ -36,15 +38,17 @@ Characterizing soil bacteriophages by host range screens and comparative genomic
   <summary>Publications</summary>
 
 **Vill AC**, Rice EJ, De Vlaminck I, Danko CG, Brito IL. [Run-on sequencing
-reveals transcriptional dynamics within the human microbiome](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1). **Out for Review**
+reveals transcriptional dynamics within the human microbiome](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1). **Preprint**
 
-Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nature Communications*. **2020** Sep 1;11(1):4379.
+**Vill AC**, Delesalle VA, Tomko BE, Lichty KB, Simões MS, Guffey AA, Burton EA, Tanke NT, Krukonis GP. [Comparative genomics of six lytic *Bacillus subtilis* phages from the Southwest United States](https://doi.org/10.1089/phage.2022.0030). *PHAGE*. **2022** 3(3):171-178.
 
-Delesalle VA, **Vill AC**, Tomko BE, Boas K, Burton EA, Guffey AA, Loney R, Simões MS, Tanke NT, Krukonis GP. Comparative genomics of fourteen novel Siphoviridae phages of Bacillus subtilis, including three phages closely related to SPP1. **In Preparation**
+Delesalle VA, Tomko BE, Vill AC, Boas K, Krukonis GP. [Forty Years without Family: Three Novel Bacteriophages with High Similarity to SPP1 Reveal Decades of Evolutionary Stasis since the Isolation of Their Famous Relative](https://doi.org/10.3390/v14102106). *Viruses*. **2022** 14(10):2106
 
-Delesalle VA, Tanke NT, **Vill AC**, Krukonis GP. [Testing hypotheses for the presence of tRNA genes in mycobacteriophage genomes.](https://doi.org/10.1080/21597081.2016.1219441) *Bacteriophage*. **2016** Aug 5;6(3):e1219441.
+Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nature Communications*. **2020** 11(1):4379.
 
-Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, Hendrix RW, Lawrence JG, Hatfull GF; **Science Education Alliance Phage Hunters Advancing Genomics and Evolutionary Science** <span style="color:red">‡</span>; Phage Hunters Integrating Research and Education; Mycobacterial Genetics Course. [Whole genome comparison of a large collection of mycobacteriophages reveals a continuum of phage genetic diversity.](https://doi.org/10.7554/elife.06416) *eLife*. **2015** Apr 28;4:e06416.
+Delesalle VA, Tanke NT, **Vill AC**, Krukonis GP. [Testing hypotheses for the presence of tRNA genes in mycobacteriophage genomes.](https://doi.org/10.1080/21597081.2016.1219441) *Bacteriophage*. **2016** 6(3):e1219441.
+
+Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, Hendrix RW, Lawrence JG, Hatfull GF; **Science Education Alliance Phage Hunters Advancing Genomics and Evolutionary Science** <span style="color:red">‡</span>; Phage Hunters Integrating Research and Education; Mycobacterial Genetics Course. [Whole genome comparison of a large collection of mycobacteriophages reveals a continuum of phage genetic diversity.](https://doi.org/10.7554/elife.06416) *eLife*. **2015** 4:e06416.
 
 <span style="color:red">†</span> co-first author  
 <span style="color:red">‡</span> consortium member, data contributor
