@@ -42,7 +42,7 @@ reveals transcriptional dynamics within the human microbiome](https://www.biorxi
 
 **Vill AC**, Delesalle VA, Tomko BE, Lichty KB, Simões MS, Guffey AA, Burton EA, Tanke NT, Krukonis GP. [Comparative genomics of six lytic *Bacillus subtilis* phages from the Southwest United States](https://doi.org/10.1089/phage.2022.0030). *PHAGE*. **2022** 3(3):171-178.
 
-Delesalle VA, Tomko BE, Vill AC, Boas K, Krukonis GP. [Forty Years without Family: Three Novel Bacteriophages with High Similarity to SPP1 Reveal Decades of Evolutionary Stasis since the Isolation of Their Famous Relative](https://doi.org/10.3390/v14102106). *Viruses*. **2022** 14(10):2106
+Delesalle VA, Tomko BE, **Vill AC**, Boas K, Krukonis GP. [Forty Years without Family: Three Novel Bacteriophages with High Similarity to SPP1 Reveal Decades of Evolutionary Stasis since the Isolation of Their Famous Relative](https://doi.org/10.3390/v14102106). *Viruses*. **2022** 14(10):2106
 
 Kent AG, **Vill AC** <span style="color:red">†</span>, Shi Q, Satlin MJ, Brito IL. [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C.](https://doi.org/10.1038/s41467-020-18164-7) *Nature Communications*. **2020** 11(1):4379.
 
