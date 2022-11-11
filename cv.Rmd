@@ -36,6 +36,8 @@ Characterizing soil bacteriophages by host range screens and comparative genomic
 
 <details>
   <summary>Publications</summary>
+  
+*Need the full text for one of the papers listed below? [Contact me](https://albertvill.com/contact/)*
 
 **Vill AC**, Rice EJ, De Vlaminck I, Danko CG, Brito IL. [Run-on sequencing
 reveals transcriptional dynamics within the human microbiome](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1). **Preprint**

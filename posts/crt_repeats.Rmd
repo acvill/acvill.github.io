@@ -1,0 +1,187 @@
+---
+title: "Calling CRISPRs and Repairing Repeats"
+author: "Albert Vill"
+date: "2022-11-11"
+output: html_document
+tags: ['metagenomics','bioinformatics','R','CRISPR']
+---
+
+A post-hoc fix for a popular CRISPR identification tool, implemented in R.
+<!--more-->
+
+<center>
+
+![CRISPR arrays with a shared consensus repeat across five oral microbiome samples, vizualized with [CRISPRviewR](https://github.com/acvill/CRISPRviewR).](/img/posts/CRISPR23_oralmicrobiomes_bgwhite_preview6.png "CRISPRviewR output"){ width=90% }
+
+</center>
+
+CRISPR-Cas systems are ubiquitous in environmental microbes and employ mechanistically diverse enzymes. At the heart of these systems are the arrays of spacers and repeats that serve as the basis for acquired immunity in bacteria and archaea. When analyzing complex microbial communities, a common approach to associate CRISPR-targeted mobile elements with their host species is to align spacers to viral databases or mobilome assemblies, exploiting the molecular fingerprints of past infections. To that end, many studies rely on software to identify and extract CRISPR arrays from metagenomic assemblies, generally by first identifying stretches of repeats with high sequence conservation. One popular choice is CRISPR Recognition Tool (CRT), which, despite being published in 2007, is still cited regularly, with [67 citing articles published so far in 2022](https://citations.springernature.com/item?doi=10.1186/1471-2105-8-209). The continued popularity of CRT can likely be attributed to minCED, a fast and simple CRISPR mining tool that uses CRT under the hood. 
+
+Recently, when running minCED for a set of assemblies, I noticed something strange about one of the arrays. 
+
+<details>
+  <summary>View Code: minCED parameters</summary>
+```{bash, echo=TRUE, eval=FALSE, warning=FALSE, message=FALSE}
+MIN=/path/to/minced
+${MIN}/minced \
+    -gffFull \
+    -minNR 3 \        
+    -minRL 20 \      # default: 23
+    -maxRL 50 \      # default: 47
+    -minSL 22 \      # default: 26
+    -maxSL 55 \      # default: 50
+    contigs.fasta \
+    example.txt \
+    example.gff
+```
+</details>
+
+```
+CRISPR 1   Range: 125549 - 126048
+POSITION	REPEAT				                    SPACER
+--------	--------------------------------	----------------------------------------------
+125549		GTTGTCATTAGCTTCCAGATTCCGTACCTTCA	CACTTGCTAATACAGCTGTGGTTGAGCCAAACAATGAGATGGTAAT	[ 32, 46 ]
+125627		GTTGTGATTAGCTTTCAGATTCCGTACCTTCA	TACTTGCTAATACAGCGCACGCGAGACCTTCACGCGACTAGGACGG	[ 32, 46 ]
+125705		GTTGTGATTAGCTTTCAGATTCCGTACCTTCA	TACTTGCTAATACAGCCACGAGCCTCATCACGCGAACTCTCATCAC	[ 32, 46 ]
+125783		GTTGTGATTAGCTTTCAGATTCCGCACCTTCA	TACTTGCTAATCCAGCCGAATTATTGCAACGCTTATCCTCGCCTCG	[ 32, 46 ]
+125861		GTTGTGATTAGCTTTCGAATTCCGTACCTTCA	CACTTGCTAACACAGCATAAAAACGACGACGACACGACCGACAGGT	[ 32, 46 ]
+125939		GTTGTGATTAGCTTTCAGATTCCGTACCTTCA	CACTTGCTAATACAGCTCGGAGGAGTGAAGAATAGCCAGCACCTCG	[ 32, 46 ]
+126017		GTTGTGATTAGCTTTCAGATTCCGTACCTCCA	
+--------	--------------------------------	----------------------------------------------
+Repeats: 7	Average Length: 32		          Average Length: 46
+```
+Specifically, the first 16 nt are more similar between spacers than expected by chance. Obviously, some portion of the repeats are being misassigned to the spacers. This discrepancy does not appear to be the result of bad parameterization, as the expected lengths for the repeats and spacers (48 and 30 nt, respectively) fall within the ranges given in the parameters. So, [I opened an issue on GitHub](https://github.com/ctSkennerton/minced/issues/36), and Connor Skennerton, the creator of minCED, soon replied with an explanation:
+
+> It is a limitation in the core CRT algorithm where it expects the repeats to be *identical*. In repeats where there is a slight wiggle the algorithm messes things up, as you have observed. There is a magic number in the core repeat extension algorithm where 75% of the nucleotides need to be the same to get to extend to the next base ...
+
+As minCED depends on CRT, other tools likewise depend on minCED, including [CRISPRdisco](https://doi.org/10.1089/crispr.2017.0022) and [CRISPR Visualizer](https://doi.org/10.1080/15476286.2018.1493332), and thus the inherent limitation of CRT is propagated. Instead of learning Java and fixing CRT [at the source](https://github.com/ctSkennerton/minced/blob/772d7eea0ca8d7d0b9ff717ca21f95782e4c5d40/CRISPRUtil.java#L35-L81), I opted to implement a *post-hoc* correction in R as a [function in my CRISPRviewR package](https://github.com/acvill/CRISPRviewR/blob/02dedb837c8924d28602b8f44de445342b0bbbc0/R/read_minced.R#L63).
+
+If `fix_repeats = TRUE` is specified, `read_minced()` will attempt to reassign portions of spacers to repeats by calculating rolling average conservation scores across spacer consensus sequences representing both possible array orientations. Reading from the left end of the conservation score vector, a new spacer-repeat boundary is drawn at the position where the conservation score falls below the threshold value given by `cutoff`. When `cutoff = 0.7` and `window = 2` (defaults), this method reliably reassigns more-similar-than-expected spacer substrings to their neighboring repeats. In a test set of [minCED data from 5 oral microbiome assemblies](https://github.com/acvill/CRISPRviewR/tree/master/example_data_minced), more than 10% of annotated CRISPR arrays (109 of 964) were found to have truncated repeats.
+
+<details>
+  <summary>View Code: read minCED data, original</summary>
+```{r, echo=TRUE, eval=FALSE, warning=FALSE, message=FALSE}
+library(CRISPRviewR) # v0.2.0
+baseurl <- "https://raw.githubusercontent.com/acvill/CRISPRviewR/master/example_data_minced/"
+
+cdat <- merge_minced(
+  s1 = read_minced(txt = url(paste0(baseurl, "s1.txt")),
+                   gff = url(paste0(baseurl, "s1.gff"))),
+  s2 = read_minced(txt = url(paste0(baseurl, "s2.txt")),
+                   gff = url(paste0(baseurl, "s2.gff"))),
+  s3 = read_minced(txt = url(paste0(baseurl, "s3.txt")),
+                   gff = url(paste0(baseurl, "s3.gff"))),
+  s4 = read_minced(txt = url(paste0(baseurl, "s4.txt")),
+                   gff = url(paste0(baseurl, "s4.gff"))),
+  s5 = read_minced(txt = url(paste0(baseurl, "s5.txt")),
+                   gff = url(paste0(baseurl, "s5.gff")))
+  )
+```
+</details>
+<br>
+<details>
+  <summary>View Code: read minCED data, fixed</summary>
+```{r, echo=TRUE, eval=FALSE, warning=FALSE, message=FALSE}
+cdat_fixed <- merge_minced(
+  s1 = read_minced(txt = url(paste0(baseurl, "s1.txt")),
+                   gff = url(paste0(baseurl, "s1.gff")),
+                   fix_repeats = TRUE),
+  s2 = read_minced(txt = url(paste0(baseurl, "s2.txt")),
+                   gff = url(paste0(baseurl, "s2.gff")),
+                   fix_repeats = TRUE),
+  s3 = read_minced(txt = url(paste0(baseurl, "s3.txt")),
+                   gff = url(paste0(baseurl, "s3.gff")),
+                   fix_repeats = TRUE),
+  s4 = read_minced(txt = url(paste0(baseurl, "s4.txt")),
+                   gff = url(paste0(baseurl, "s4.gff")),
+                   fix_repeats = TRUE),
+  s5 = read_minced(txt = url(paste0(baseurl, "s5.txt")),
+                   gff = url(paste0(baseurl, "s5.gff")),
+                   fix_repeats = TRUE)
+  )
+
+```
+</details>
+
+An analysis of the sequence content of the 109 fixed arrays shows that, on average, 8 nt from spacers are reassigned to repeats. The most important windfall of correctly annotating the spacer-repeat boundary is more accurate host-phage pair assignment. Though not tested here, alignments of spacers to phage databases often rely on BLAST searches optimized for short sequences, and such alignment schemes are likely affected by excess non-spacer sequence.
+
+<details>
+  <summary>View Code: summarize fixed sequences</summary>
+```{r, echo=TRUE, eval=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse) # v1.3.2
+
+compare_rep <- function(dat) {
+  dat |> group_by(id, array) |> slice(2) |> select(id, array, rep)
+}
+
+comp <- left_join(compare_rep(cdat),
+                  compare_rep(cdat_fixed),
+                  by = c("id", "array")) |>
+  filter(rep.x != rep.y) |>
+  mutate(diff = nchar(rep.y) - nchar(rep.x))
+
+ggplot(data = comp) +
+  geom_histogram(mapping = aes(x = diff),
+                 binwidth = 1,
+                 color = "blue",
+                 fill = "cornsilk") +
+  geom_vline(mapping = aes(xintercept = mean(diff)),
+             color = "red",
+             linetype = "dashed",
+             size = 1) +
+  scale_x_continuous(breaks = seq(1, 25, by = 2)) +
+  xlab("nt added to fixed repeats") +
+  ylab("count of CRISPR arrays") +
+  theme(axis.title.x = element_text(size = 15),
+        axis.title.y = element_text(size = 15),
+        axis.text.x = element_text(size = 13, angle = 0,
+                                   vjust = 0.5, color = "black"),
+        axis.text.y = element_text(size = 13, color = "black"),
+        panel.border = element_rect(color = "black", linewidth = 1.5,
+                                    fill = NA, linetype = "solid"),
+        panel.background = element_rect(fill = "lightblue"), 
+        axis.line.y = element_blank(),
+        axis.line.x = element_blank(),
+        panel.grid = element_blank(),
+        axis.line = element_line(color = "black"))
+  
+```
+</details>
+
+<center>
+
+![](/img/posts/crt_hist3.png "histogram"){ width=90% }
+
+</center>
+
+One important caveat of this approach is that it is agnostic to the sequence context of the original assembly, since it relies solely on the minCED output as input. This means that one repeat at one end of each fixed array will retain its original truncated sequence, as detailed in the schematic below.
+
+<center>
+
+![](/img/posts/fix_repeats_truncated_white.png "schematic"){ width=90% }
+
+</center>
+
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: #7f1cad;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+details > summary {
+  font-size: 1.0em;
+  padding: 10px;
+  background-color: #21436e;
+  border: none;
+  box-shadow: 0px 0px 0px #bbbbbb;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+</style>

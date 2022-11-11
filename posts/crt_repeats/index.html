@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.105.0">
+
+    
+    
+    
+
+<title>Calling CRISPRs and Repairing Repeats • Albert Vill</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Calling CRISPRs and Repairing Repeats"/>
+<meta name="twitter:description" content="
+
+
+A post-hoc fix for a popular CRISPR identification tool, implemented in R.
+"/>
+
+<meta property="og:title" content="Calling CRISPRs and Repairing Repeats" />
+<meta property="og:description" content="
+
+
+A post-hoc fix for a popular CRISPR identification tool, implemented in R.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://acvill.github.io/posts/crt_repeats/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-11-11T00:00:00+00:00" /><meta property="og:site_name" content="Title" />
+
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.83a929a933962c7643b655554c2e1b7cb32e23c25a2d7262666d4ac0574b9e7e.css" integrity="sha256-g6kpqTOWLHZDtlVVTC4bfLMuI8JaLXJiZm1KwFdLnn4=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png">
+    
+    
+
+    
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://acvill.github.io/">
+        
+          Albert Vill
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://acvill.github.io/img/about/july2021_cropped1.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Albert Vill</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/about">
+						<span>About</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/cv">
+						<span>CV</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Blog</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/projects">
+						<span>Code &amp; Resources</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/contact">
+						<span>Contact Me</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+  
+	<a href="https://biology.stackexchange.com/users/52196/acvill" rel="me"><i class="fab fa-stack-exchange fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://twitter.com/_AlbertVill" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	<a href="https://github.com/acvill" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/albert-vill-a457821a1" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://scholar.google.com/citations?user=j9imsbgAAAAJ" rel="me"><i class="fas fa-graduation-cap fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 - 2022 A.C. Vill
+  
+  <br>
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Calling CRISPRs and Repairing Repeats</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> 11 Nov 2022
+    
+    
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/metagenomics">metagenomics</a>
+         
+      
+          <a class="badge badge-tag" href="/tags/bioinformatics">bioinformatics</a>
+         
+      
+          <a class="badge badge-tag" href="/tags/r">r</a>
+         
+      
+          <a class="badge badge-tag" href="/tags/crispr">crispr</a>
+        
+      
+    
+    
+    <br/>
+    
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    </p>
+<center>
+<div class="figure">
+<img src="/img/posts/CRISPR23_oralmicrobiomes_bgwhite_preview6.png" title="CRISPRviewR output" style="width:90.0%" alt="" />
+<p class="caption">CRISPR arrays with a shared consensus repeat across five oral microbiome samples, vizualized with <a href="https://github.com/acvill/CRISPRviewR">CRISPRviewR</a>.</p>
+</div>
+</center>
+<p>CRISPR-Cas systems are ubiquitous in environmental microbes and employ mechanistically diverse enzymes. At the heart of these systems are the arrays of spacers and repeats that serve as the basis for acquired immunity in bacteria and archaea. When analyzing complex microbial communities, a common approach to associate CRISPR-targeted mobile elements with their host species is to align spacers to viral databases or mobilome assemblies, exploiting the molecular fingerprints of past infections. To that end, many studies rely on software to identify and extract CRISPR arrays from metagenomic assemblies, generally by first identifying stretches of repeats with high sequence conservation. One popular choice is CRISPR Recognition Tool (CRT), which, despite being published in 2007, is still cited regularly, with <a href="https://citations.springernature.com/item?doi=10.1186/1471-2105-8-209">67 citing articles published so far in 2022</a>. The continued popularity of CRT can likely be attributed to minCED, a fast and simple CRISPR mining tool that uses CRT under the hood.</p>
+<p>Recently, when running minCED for a set of assemblies, I noticed something strange about one of the arrays.</p>
+<details>
+<summary>
+View Code: minCED parameters
+</summary>
+<pre class="bash"><code>MIN=/path/to/minced
+${MIN}/minced \
+    -gffFull \
+    -minNR 3 \        
+    -minRL 20 \      # default: 23
+    -maxRL 50 \      # default: 47
+    -minSL 22 \      # default: 26
+    -maxSL 55 \      # default: 50
+    contigs.fasta \
+    example.txt \
+    example.gff</code></pre>
+</details>
+<pre><code>CRISPR 1   Range: 125549 - 126048
+POSITION    REPEAT                                  SPACER
+--------    --------------------------------    ----------------------------------------------
+125549      GTTGTCATTAGCTTCCAGATTCCGTACCTTCA    CACTTGCTAATACAGCTGTGGTTGAGCCAAACAATGAGATGGTAAT  [ 32, 46 ]
+125627      GTTGTGATTAGCTTTCAGATTCCGTACCTTCA    TACTTGCTAATACAGCGCACGCGAGACCTTCACGCGACTAGGACGG  [ 32, 46 ]
+125705      GTTGTGATTAGCTTTCAGATTCCGTACCTTCA    TACTTGCTAATACAGCCACGAGCCTCATCACGCGAACTCTCATCAC  [ 32, 46 ]
+125783      GTTGTGATTAGCTTTCAGATTCCGCACCTTCA    TACTTGCTAATCCAGCCGAATTATTGCAACGCTTATCCTCGCCTCG  [ 32, 46 ]
+125861      GTTGTGATTAGCTTTCGAATTCCGTACCTTCA    CACTTGCTAACACAGCATAAAAACGACGACGACACGACCGACAGGT  [ 32, 46 ]
+125939      GTTGTGATTAGCTTTCAGATTCCGTACCTTCA    CACTTGCTAATACAGCTCGGAGGAGTGAAGAATAGCCAGCACCTCG  [ 32, 46 ]
+126017      GTTGTGATTAGCTTTCAGATTCCGTACCTCCA    
+--------    --------------------------------    ----------------------------------------------
+Repeats: 7  Average Length: 32                Average Length: 46</code></pre>
+<p>Specifically, the first 16 nt are more similar between spacers than expected by chance. Obviously, some portion of the repeats are being misassigned to the spacers. This discrepancy does not appear to be the result of bad parameterization, as the expected lengths for the repeats and spacers (48 and 30 nt, respectively) fall within the ranges given in the parameters. So, <a href="https://github.com/ctSkennerton/minced/issues/36">I opened an issue on GitHub</a>, and Connor Skennerton, the creator of minCED, soon replied with an explanation:</p>
+<blockquote>
+<p>It is a limitation in the core CRT algorithm where it expects the repeats to be <em>identical</em>. In repeats where there is a slight wiggle the algorithm messes things up, as you have observed. There is a magic number in the core repeat extension algorithm where 75% of the nucleotides need to be the same to get to extend to the next base …</p>
+</blockquote>
+<p>As minCED depends on CRT, other tools likewise depend on minCED, including <a href="https://doi.org/10.1089/crispr.2017.0022">CRISPRdisco</a> and <a href="https://doi.org/10.1080/15476286.2018.1493332">CRISPR Visualizer</a>, and thus the inherent limitation of CRT is propagated. Instead of learning Java and fixing CRT <a href="https://github.com/ctSkennerton/minced/blob/772d7eea0ca8d7d0b9ff717ca21f95782e4c5d40/CRISPRUtil.java#L35-L81">at the source</a>, I opted to implement a <em>post-hoc</em> correction in R as a <a href="https://github.com/acvill/CRISPRviewR/blob/02dedb837c8924d28602b8f44de445342b0bbbc0/R/read_minced.R#L63">function in my CRISPRviewR package</a>.</p>
+<p>If <code>fix_repeats = TRUE</code> is specified, <code>read_minced()</code> will attempt to reassign portions of spacers to repeats by calculating rolling average conservation scores across spacer consensus sequences representing both possible array orientations. Reading from the left end of the conservation score vector, a new spacer-repeat boundary is drawn at the position where the conservation score falls below the threshold value given by <code>cutoff</code>. When <code>cutoff = 0.7</code> and <code>window = 2</code> (defaults), this method reliably reassigns more-similar-than-expected spacer substrings to their neighboring repeats. In a test set of <a href="https://github.com/acvill/CRISPRviewR/tree/master/example_data_minced">minCED data from 5 oral microbiome assemblies</a>, more than 10% of annotated CRISPR arrays (109 of 964) were found to have truncated repeats.</p>
+<details>
+<summary>
+View Code: read minCED data, original
+</summary>
+<pre class="r"><code>library(CRISPRviewR) # v0.2.0
+baseurl &lt;- &quot;https://raw.githubusercontent.com/acvill/CRISPRviewR/master/example_data_minced/&quot;
+
+cdat &lt;- merge_minced(
+  s1 = read_minced(txt = url(paste0(baseurl, &quot;s1.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s1.gff&quot;))),
+  s2 = read_minced(txt = url(paste0(baseurl, &quot;s2.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s2.gff&quot;))),
+  s3 = read_minced(txt = url(paste0(baseurl, &quot;s3.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s3.gff&quot;))),
+  s4 = read_minced(txt = url(paste0(baseurl, &quot;s4.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s4.gff&quot;))),
+  s5 = read_minced(txt = url(paste0(baseurl, &quot;s5.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s5.gff&quot;)))
+  )</code></pre>
+</details>
+<br>
+<details>
+<summary>
+View Code: read minCED data, fixed
+</summary>
+<pre class="r"><code>cdat_fixed &lt;- merge_minced(
+  s1 = read_minced(txt = url(paste0(baseurl, &quot;s1.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s1.gff&quot;)),
+                   fix_repeats = TRUE),
+  s2 = read_minced(txt = url(paste0(baseurl, &quot;s2.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s2.gff&quot;)),
+                   fix_repeats = TRUE),
+  s3 = read_minced(txt = url(paste0(baseurl, &quot;s3.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s3.gff&quot;)),
+                   fix_repeats = TRUE),
+  s4 = read_minced(txt = url(paste0(baseurl, &quot;s4.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s4.gff&quot;)),
+                   fix_repeats = TRUE),
+  s5 = read_minced(txt = url(paste0(baseurl, &quot;s5.txt&quot;)),
+                   gff = url(paste0(baseurl, &quot;s5.gff&quot;)),
+                   fix_repeats = TRUE)
+  )</code></pre>
+</details>
+<p>An analysis of the sequence content of the 109 fixed arrays shows that, on average, 8 nt from spacers are reassigned to repeats. The most important windfall of correctly annotating the spacer-repeat boundary is more accurate host-phage pair assignment. Though not tested here, alignments of spacers to phage databases often rely on BLAST searches optimized for short sequences, and such alignment schemes are likely affected by excess non-spacer sequence.</p>
+<details>
+<summary>
+View Code: summarize fixed sequences
+</summary>
+<pre class="r"><code>library(tidyverse) # v1.3.2
+
+compare_rep &lt;- function(dat) {
+  dat |&gt; group_by(id, array) |&gt; slice(2) |&gt; select(id, array, rep)
+}
+
+comp &lt;- left_join(compare_rep(cdat),
+                  compare_rep(cdat_fixed),
+                  by = c(&quot;id&quot;, &quot;array&quot;)) |&gt;
+  filter(rep.x != rep.y) |&gt;
+  mutate(diff = nchar(rep.y) - nchar(rep.x))
+
+ggplot(data = comp) +
+  geom_histogram(mapping = aes(x = diff),
+                 binwidth = 1,
+                 color = &quot;blue&quot;,
+                 fill = &quot;cornsilk&quot;) +
+  geom_vline(mapping = aes(xintercept = mean(diff)),
+             color = &quot;red&quot;,
+             linetype = &quot;dashed&quot;,
+             size = 1) +
+  scale_x_continuous(breaks = seq(1, 25, by = 2)) +
+  xlab(&quot;nt added to fixed repeats&quot;) +
+  ylab(&quot;count of CRISPR arrays&quot;) +
+  theme(axis.title.x = element_text(size = 15),
+        axis.title.y = element_text(size = 15),
+        axis.text.x = element_text(size = 13, angle = 0,
+                                   vjust = 0.5, color = &quot;black&quot;),
+        axis.text.y = element_text(size = 13, color = &quot;black&quot;),
+        panel.border = element_rect(color = &quot;black&quot;, linewidth = 1.5,
+                                    fill = NA, linetype = &quot;solid&quot;),
+        panel.background = element_rect(fill = &quot;lightblue&quot;), 
+        axis.line.y = element_blank(),
+        axis.line.x = element_blank(),
+        panel.grid = element_blank(),
+        axis.line = element_line(color = &quot;black&quot;))</code></pre>
+</details>
+<center>
+<p><img src="/img/posts/crt_hist3.png" title="histogram" style="width:90.0%" /></p>
+</center>
+<p>One important caveat of this approach is that it is agnostic to the sequence context of the original assembly, since it relies solely on the minCED output as input. This means that one repeat at one end of each fixed array will retain its original truncated sequence, as detailed in the schematic below.</p>
+<center>
+<p><img src="/img/posts/fix_repeats_truncated_white.png" title="schematic" style="width:90.0%" /></p>
+</center>
+<style>
+p.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: #7f1cad;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+details > summary {
+  font-size: 1.0em;
+  padding: 10px;
+  background-color: #21436e;
+  border: none;
+  box-shadow: 0px 0px 0px #bbbbbb;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+</style>
+
+  </div>
+  
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-JKQWQF4NBY', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>

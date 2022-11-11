@@ -6,7 +6,20 @@
     <description>Recent content on Albert Vill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calling CRISPRs and Repairing Repeats</title>
+      <link>https://acvill.github.io/posts/crt_repeats/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/crt_repeats/</guid>
+      <description>
+
+
+&lt;p&gt;A post-hoc fix for a popular CRISPR identification tool, implemented in R.
+</description>
+    </item>
+    
     <item>
       <title>Lost at the crossroads: genes at the nodes of short-read assembly graphs</title>
       <link>https://acvill.github.io/posts/nodeseqs_oral/</link>
@@ -87,7 +100,7 @@ I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and mole
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/projects/</guid>
-      <description>Expand details…CRISPR-Cas systems are ubiquitous in environmental microbes and employ mechanistically diverse enzymes. At the heart of CRISPR systems are the arrays of spacers and repeats that serve as the basis for acquired immunity in bacteria and archaea. minCED (Mining CRISPRs in Environmental Datasets) is a program used by prokka and other pipelines for the annotation of CRISPRs in metagenomic assemblies. However, manually parsing the output of minCED for interesting CRISPRs is tedious, and comparing CRISPRs across samples is difficult because of differences in array assembly and orientation.</description>
+      <description>Expand details…minCED (Mining CRISPRs in Environmental Datasets) is a program used by prokka and other pipelines for the annotation of CRISPRs in metagenomic assemblies. However, manually parsing the output of minCED for interesting CRISPRs is tedious, and comparing CRISPRs across samples is difficult because of differences in array assembly and orientation. CRISPRviewR attempts to address this issue by associating CRISPR arrays by shared consensus repeat sequences, permitting clustering and visualization of spacers between metagenomic assemblies.</description>
     </item>
     
     <item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CRISPR on Albert Vill</title>
+    <link>https://acvill.github.io/tags/crispr/</link>
+    <description>Recent content in CRISPR on Albert Vill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://acvill.github.io/tags/crispr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calling CRISPRs and Repairing Repeats</title>
+      <link>https://acvill.github.io/posts/crt_repeats/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://acvill.github.io/posts/crt_repeats/</guid>
+      <description>
+
+
+&lt;p&gt;A post-hoc fix for a popular CRISPR identification tool, implemented in R.
+</description>
+    </item>
+    
+  </channel>
+</rss>
