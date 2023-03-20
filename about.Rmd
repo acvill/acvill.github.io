@@ -11,7 +11,8 @@ output: html_document
 
 </center>
 
-## :pizza::petri_dish: Background 
+<details>
+  <summary>Background:pizza::petri_dish:</summary>
 
 I am from New Jersey. New Yorkers may think they have better bagels and pizza, but they're wrong. 
 
@@ -21,7 +22,12 @@ After undergrad, I enrolled at Cornell University as a graduate student in the f
 
 I defended my thesis in April 2022, titled *Metagenomic Methods to Investigate Mobile Element Context and Nascent Transcription in the Human Gut Microbiome*.
 
-## :dna::poop: Research 
+Currently, I am postdoc with Paul Turner in the [Center for Phage Biology and Therapy at Yale](http://www.yalephagecenter.com/).
+
+</details>
+
+<details>
+  <summary>Research:dna::poop:</summary>
 
 I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based sequencing analysis tools. 
 
@@ -35,15 +41,21 @@ In 2022, I wrote a manuscript on the application of [precision run-on sequencing
 
 The Brito Lab is continuing to innovate in the microbiome mobile gene space with techniques like [OIL-PCR](https://doi.org/10.7554/eLife.66834) and [GCN models for HGT prediction](https://doi.org/10.1126/sciadv.abj5056). 
 
-## :computer::bar_chart: Side Projects
+</details>
+
+<details>
+  <summary>Side Projects:computer::bar_chart:</summary>
 
 I love R and I appreciate well-documented bioinformatics tools. When I write a handy piece of code, I like to optimize it for ease-of-use. Please see [my code & resources page](https://albertvill.com/projects) for descriptions of tools and scripts that I've developed as part of my ongoing research in metagenomics and bacterial genetics.
 
-## :confetti_ball::partying_face: Fun Stuff
+</details>
 
-I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com). Below are some of my favorite questions I've answered. Come ask more! 
+<details>
+  <summary>Fun Stuff:confetti_ball::partying_face:</summary>
 
-<a href="https://biology.stackexchange.com/users/52196/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="287" height="80" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
+I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexchange.com/users/52196/acvill). Below are some of my favorite questions I've answered. Come ask more! 
+
+<!-- <a href="https://biology.stackexchange.com/users/52196/acvill"><img src="https://stackexchange.com/users/flair/10848131.png" width="287" height="80" alt="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for acvill on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a> -->
 
 - [What are the limitations of 16S rRNA sequencing?](https://biology.stackexchange.com/a/104658/52196)
 - [Does direction relative to origin of replication matter on small plasmids?](https://biology.stackexchange.com/a/100124/52196)
@@ -53,6 +65,8 @@ I'm a regular contributor on [Biology Stack Exchange](https://biology.stackexcha
 - [Will all bacteria become resistant against all antibiotics in the long term?](https://biology.stackexchange.com/a/90122/52196)
 - [What are the considerations for studying population genetics of bacterial pan-genomes?](https://biology.stackexchange.com/a/97169/52196)
 
+</details>
+
 <style>
 p.caption {
   font-size: 0.9em;
@@ -60,6 +74,20 @@ p.caption {
   color: #7f1cad;
   margin-right: 5%;
   margin-left: 5%;
+}
+details > summary {
+  font-size: 1.5em;
+  padding: 10px;
+  background-color: #21436e;
+  border: none;
+  box-shadow: 0px 0px 0px #bbbbbb;
+  cursor: pointer;
+  margin-left: 0%;
+  margin-right: 10%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  color: #FFFFFF;
+  border-radius: 5px;
 }
 </style>
 <a rel="me" href="https://mstdn.science/@albertvill"></a>
