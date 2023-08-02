@@ -4,6 +4,16 @@ author: "Albert Vill"
 date: ""
 output: html_document
 ---
+I upload standalone functions and short scripts to my [GitHub Gists page :computer:](https://gist.github.com/acvill).  
+
+If you want a collaborator to help with data cleaning or visualization, please [contact me :email:](https://albertvill.com/contact/).
+
+If you find any of my code or tools helpful, feel free to [buy me a coffee :coffee:](https://www.buymeacoffee.com/acvill).
+
+---
+
+## Projects
+
 [![](https://github-readme-stats.vercel.app/api/pin/?username=acvill&repo=CRISPRviewR&bg_color=21436e&text_color=ededed&title_color=30ff53&hide_border=true&icon_color=ededed)](https://github.com/acvill/CRISPRviewR)
 
 <details>

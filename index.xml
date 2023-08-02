@@ -100,7 +100,10 @@ I graduated from Gettysburg College in 2016 with a B.S. in biochemistry and mole
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://acvill.github.io/projects/</guid>
-      <description>Expand details…minCED (Mining CRISPRs in Environmental Datasets) is a program used by prokka and other pipelines for the annotation of CRISPRs in metagenomic assemblies. However, manually parsing the output of minCED for interesting CRISPRs is tedious, and comparing CRISPRs across samples is difficult because of differences in array assembly and orientation. CRISPRviewR attempts to address this issue by associating CRISPR arrays by shared consensus repeat sequences, permitting clustering and visualization of spacers between metagenomic assemblies.</description>
+      <description>I upload standalone functions and short scripts to my GitHub Gists page 💻.
+If you want a collaborator to help with data cleaning or visualization, please contact me ✉️.
+If you find any of my code or tools helpful, feel free to buy me a coffee ☕.
+ProjectsExpand details…minCED (Mining CRISPRs in Environmental Datasets) is a program used by prokka and other pipelines for the annotation of CRISPRs in metagenomic assemblies.</description>
     </item>
     
     <item>
