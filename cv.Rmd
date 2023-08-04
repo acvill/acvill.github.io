@@ -5,8 +5,8 @@ date: ""
 output: html_document
 ---
 
-Last updated 23 Sep. 2022  
-[**PDF version here**](/AVill_CV_23Sep2022.pdf)
+Last updated 4 Aug. 2023  
+[**PDF version here**](/AVill_CV_4Aug2023.pdf)
 
 <details>
   <summary>Education</summary>
@@ -26,6 +26,9 @@ Lincoln Scholar – highest merit-based scholarship awarded
 <details>
   <summary>Research Experience</summary>
 
+<h4>Postdoctoral Associate — Lab of Dr. Paul Turner, Yale University</h4>
+Studying the evolutionary dynamics of phages of human pathogens as part of the ongoing efforts at the Center for Phage Biology and Therapy at Yale — **March 2023 – Present**  
+
 <h4>PhD Candidate — Lab of Dr. Ilana Brito, Cornell University</h4>
 Designing and implementing methods to quantify changes in the composition and function of the human gut microbiome during perturbation and disease — **May 2017 – May 2022**  
 
@@ -42,6 +45,15 @@ Characterizing soil bacteriophages by host range screens and comparative genomic
 **Vill AC**, Rice EJ, De Vlaminck I, Danko CG, Brito IL. [Run-on sequencing
 reveals transcriptional dynamics within the human microbiome](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1). **Preprint**
 
+Chivu AG, Abuhashem A, Barshad G, Rice EJ, Leger MM, **Vill AC**, Wong W, Brady R,
+Smith JJ, Wikramanayake AH, Arenas-Mena C, Brito IL, Ruiz-Trillo I, Hadjantonakis
+AK, Lis JT, Lewis JJ, Danko CG. [Evolution of promoter-proximal pausing enabled a
+new layer of transcription control](https://doi.org/10.1101/2023.02.19.529146). **Preprint**
+
+Grodner B, Shi H, Farchione O, **Vill AC**, Ntekas I, Diebold PJ, Zipfel WR, Brito IL,
+De Vlaminck I. [Spatial Mapping of Mobile Genetic Elements and their Cognate Hosts
+in Complex Microbiomes](https://doi.org/10.1101/2023.06.09.544291). **Preprint**
+
 **Vill AC**, Delesalle VA, Tomko BE, Lichty KB, Simões MS, Guffey AA, Burton EA, Tanke NT, Krukonis GP. [Comparative genomics of six lytic *Bacillus subtilis* phages from the Southwest United States](https://doi.org/10.1089/phage.2022.0030). *PHAGE*. **2022** 3(3):171-178.
 
 Delesalle VA, Tomko BE, **Vill AC**, Boas K, Krukonis GP. [Forty Years without Family: Three Novel Bacteriophages with High Similarity to SPP1 Reveal Decades of Evolutionary Stasis since the Isolation of Their Famous Relative](https://doi.org/10.3390/v14102106). *Viruses*. **2022** 14(10):2106
@@ -54,20 +66,6 @@ Pope WH, Bowman CA, Russell DA, Jacobs-Sera D, Asai DJ, Cresawn SG, Jacobs WR, H
 
 <span style="color:red">†</span> co-first author  
 <span style="color:red">‡</span> consortium member, data contributor
-
-</details>
-
-<details>
-  <summary>Presentations</summary>
-
-**Poster** — The Human Microbiome: Ecology and Evolution Symposium  
-*Run-on sequencing enables nascent metatranscriptomics of the human microbiome*. **2022** (<span style="color:red">canceled</span>) 
-
-**Poster** — Lake Arrowhead Microbial Genomics Meeting  
-*Bacterial nascent transcriptomics with precision run-on sequencing*. **2021** (<span style="color:red">canceled</span>)  
-
-**Poster** — Biomedical Engineering Society Annual Meeting  
-*Monitoring the Transfer of Antibiotic Resistance Genes in Patients with Neutropenia using Bacterial Hi-C*. **2019**
 
 </details>
 
