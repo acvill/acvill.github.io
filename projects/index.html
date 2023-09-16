@@ -246,9 +246,9 @@ Expand details…
 </summary>
 <p><a href="https://github.com/ctSkennerton/minced">minCED</a> (<strong>Min</strong>ing <strong>C</strong>RISPRs in <strong>E</strong>nvironmental <strong>D</strong>atasets) is a program used by <a href="https://github.com/tseemann/prokka">prokka</a> and other pipelines for the annotation of CRISPRs in metagenomic assemblies. However, manually parsing the output of minCED for interesting CRISPRs is tedious, and comparing CRISPRs across samples is difficult because of differences in array assembly and orientation. CRISPRviewR attempts to address this issue by associating CRISPR arrays by shared consensus repeat sequences, permitting clustering and visualization of spacers between metagenomic assemblies. This package also includes a function to <a href="https://albertvill.com/posts/crt_repeats/">fix truncated repeats</a>. Check out the <a href="https://albertvill.com/CRISPRviewR-vignette.html">CRISPRviewR vignette</a> for use cases and example plots.</p>
 <center>
-<div class="figure">
-<img src="/img/about/CRISPR23_oralmicrobiomes_numbers_bgwhite.svg" title="CRISPR arrays" style="width:90.0%" alt="" />
-<p class="caption">Example output from CRISPRviewR</p>
+<div class="float">
+<img src="/img/about/CRISPR23_oralmicrobiomes_numbers_bgwhite.svg" title="CRISPR arrays" style="width:90.0%" alt="Example output from CRISPRviewR" />
+<div class="figcaption">Example output from CRISPRviewR</div>
 </div>
 </center>
 </details>
@@ -257,11 +257,11 @@ Expand details…
 <summary>
 Expand details…
 </summary>
-<p>As a graduate student studying metagenomics, I frequently use Derrick Wood’s <a href="https://doi.org/10.1186/s13059-019-1891-0">Kraken2</a> software for accurate and lightning-fast classification of short reads. <a href="https://doi.org/10.7717/peerj-cs.104">Bracken</a> is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a <a href="https://acvill.shinyapps.io/bracken_plot/">simple shiny app</a> for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports.</p>
+<p>I frequently use Derrick Wood’s <a href="https://doi.org/10.1186/s13059-019-1891-0">Kraken2</a> software for accurate and lightning-fast classification of short reads. <a href="https://doi.org/10.7717/peerj-cs.104">Bracken</a> is complimentary software that uses Kraken reports to produce relative abundance estimates at any taxonomic level. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I’ve created a <a href="https://acvill.shinyapps.io/bracken_plot/">simple shiny app</a> for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports.</p>
 <center>
-<div class="figure">
-<img src="/img/about/bracken_barplot.png" title="Bracken bar plot" style="width:75.0%" alt="" />
-<p class="caption">Example output from the bracken_plot app showing genus-level relative abudance across oral microbiome samples. Don’t mind the human read contamination!</p>
+<div class="float">
+<img src="/img/about/bracken_barplot.png" title="Bracken bar plot" style="width:75.0%" alt="Example output from the bracken_plot app showing genus-level relative abudance across oral microbiome samples. Don’t mind the human read contamination!" />
+<div class="figcaption">Example output from the bracken_plot app showing genus-level relative abudance across oral microbiome samples. Don’t mind the human read contamination!</div>
 </div>
 </center>
 </details>
@@ -273,9 +273,9 @@ Expand details…
 <p><code>nodeSeqs.sh</code> takes in a <a href="http://gfa-spec.github.io/GFA-spec/GFA1.html"><strong>G</strong>raphical <strong>F</strong>ragment <strong>A</strong>ssembly file</a> and outputs sequences proximal to high-degree nodes. In the language of GFA, this script looks for <em>segments</em> that have a large number of <em>links</em>, and then filters those segments by <em>k</em>-mer coverage to preclude hits that are poorly assembled due to low coverage. The resulting .fasta can then be fed into your favorite sequence alignment software.</p>
 <p>For an example application of this script, please see my blog post: <a href="https://albertvill.com/posts/nodeseqs_oral/"><strong><em>Lost at the crossroads: genes at the nodes of short-read assembly graphs</em></strong></a>.</p>
 <center>
-<div class="figure">
-<img src="/img/about/bandage_sub.svg" title="Bandage Graph" style="width:90.0%" alt="" />
-<p class="caption">A partial Bandage graph for a plasmidome assembly shows segments connected by links</p>
+<div class="float">
+<img src="/img/about/bandage_sub.svg" title="Bandage Graph" style="width:90.0%" alt="A partial Bandage graph for a plasmidome assembly shows segments connected by links" />
+<div class="figcaption">A partial Bandage graph for a plasmidome assembly shows segments connected by links</div>
 </div>
 </center>
 </details>
@@ -286,9 +286,9 @@ Expand details…
 </summary>
 <p>To understand the genetic context and biological relevance of DNA motifs, it’s often valuable to analyze their distribution and sequence conservation. Many programs exist for both the identification of novel motifs and the scoring of known motifs, though few of these tools work out-of-the-box for highly fragmented bacterial genomes. To address this, I’ve written findMotifs.R – an easy-to-implement R script to find and score short sequences using position-frequency matrices (PFMs). Given a set of contigs and a list of PFMs, this script returns an easy-to-parse table containing the sequence, score, and strand-wise position of each match above a user-defined threshold. findMotifs.R requires R version 4.0 and three packages: Biostrings, optparse, and stringr.</p>
 <center>
-<div class="figure">
-<img src="/img/about/findmotifs2.PNG" title="command line screenshot of findMotifs in action" style="width:90.0%" alt="" />
-<p class="caption">findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.</p>
+<div class="float">
+<img src="/img/about/findmotifs2.PNG" title="command line screenshot of findMotifs in action" style="width:90.0%" alt="findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console." />
+<div class="figcaption">findmotifs.R is invoked from the command line with user inputs. Progress for each motif prints to the console.</div>
 </div>
 </center>
 </details>

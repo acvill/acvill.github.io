@@ -27,7 +27,7 @@ I upload standalone functions and short scripts to my [GitHub Gists page](https:
 <details>
   <summary>Expand details...</summary>
 
-As a graduate student studying metagenomics, I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce genus- and species-level abundance estimates. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. 
+I frequently use Derrick Wood's [Kraken2](https://doi.org/10.1186/s13059-019-1891-0) software for accurate and lightning-fast classification of short reads. [Bracken](https://doi.org/10.7717/peerj-cs.104) is complimentary software that uses Kraken reports to produce relative abundance estimates at any taxonomic level. Often, a first step in metagenomic analysis is examining the distribution of different organisms across samples. To that end, I've created a [simple shiny app](https://acvill.shinyapps.io/bracken_plot/) for quick, customizable plotting of taxonomic structures encoded in multi-sample Bracken reports. 
 
 <center>
 
