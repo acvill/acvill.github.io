@@ -7,7 +7,7 @@ output: html_document
 
 <center>
 
-![A waterfall in Connecticut Hill Wildlife Area, Newfield, NY](/img/about/waterfall2.jpg)
+![Looking east from East Rock Park, New Haven, CT](/img/about/east_rock_park_18Nov2023.png)
 
 </center>
 
@@ -29,13 +29,9 @@ Currently, I am postdoc with Paul Turner in the [Center for Phage Biology and Th
 <details>
   <summary>Research:dna::poop:</summary>
 
-I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes. While much of my time is spent at the bench, I am proficient in R, Bash, and many Linux-based sequencing analysis tools. 
+I am interested in bacterial genomics, host-microbe interactions, and all things bacteriophage. My training is in molecular biology with a focus on DNA and RNA sequencing of microbiomes.
 
-In 2020, I co-authored a paper with [Dr. Alyssa Kent](https://alyssakent.weebly.com/) on the use of proximity ligation sequencing (commonly called Hi-C) to resolve mobile element carriage in the gut microbiomes of cancer patients. We found that Hi-C could detect the putative transfer of multi-drug resistance genes between commensal microbes and pathogens within individual patients through time. You can read more about it in Ilana's [*Behind the Paper*](https://go.nature.com/2FJPxqX) highlight or in my Twitter thread:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited for the publication of my first paper as a PhD student in the Brito Lab <a href="https://twitter.com/ilanabrito123?ref_src=twsrc%5Etfw">@ilanabrito123</a> <a href="https://twitter.com/CornellBME?ref_src=twsrc%5Etfw">@CornellBME</a> <a href="https://twitter.com/NatureComms?ref_src=twsrc%5Etfw">@NatureComms</a>: &quot;Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C&quot; <a href="https://t.co/4ZpBtGDA8m">https://t.co/4ZpBtGDA8m</a><br><br>1/10</p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1300856406787207171?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-In 2022, I wrote a manuscript on the application of [precision run-on sequencing](https://doi.org/10.1038/nprot.2016.086) to assess nascent transcription in bacteria. When applied to human stool samples, PRO-seq captures transcription at metagenomic loci that are co-transcriptionally processed, including tRNAs and CRISPR arrays. The manuscript is available as a [preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2022.04.22.489220v1).
+As a graduate student, I used [precision run-on sequencing](https://doi.org/10.1038/nprot.2016.086) to assess nascent transcription in bacteria. When applied to human stool samples, PRO-seq captures transcription at metagenomic loci that are co-transcriptionally processed, including tRNAs and CRISPR arrays. Our manuscript is now published in [*Nature Microbiology*](https://www.nature.com/articles/s41564-023-01558-w).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">My favorite result: PRO-seq captures active transcription across <a href="https://twitter.com/hashtag/CRISPR?src=hash&amp;ref_src=twsrc%5Etfw">#CRISPR</a> arrays, and patterns suggest that endonuclease processing of crRNAs is concurrent with pre-crRNA transcription <a href="https://t.co/vS1tbBI94x">pic.twitter.com/vS1tbBI94x</a></p>&mdash; Albert Vill (@_AlbertVill) <a href="https://twitter.com/_AlbertVill/status/1519751344273465344?ref_src=twsrc%5Etfw">April 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
